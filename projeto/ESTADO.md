@@ -54,6 +54,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Fase 4, estilo: tom direto, próximo e preciso; sem travessão no texto do site; CTA único "Quero meu diagnóstico" (menu, hero, rodapé), botões de serviço "Falar sobre <serviço>" (aprovado por Filipe)
 - 2026-09-29 — Fase 4: copy aprovada inteira em `projeto/COPY.md` (home, `/sites`, `/atendimento-ia`, `/sob-medida`, `/privacidade` como rascunho, 404, Open Graph, navegação, rodapé). Dado da KPMG entra com fonte; "pequenos ajustes" na mensalidade, mudanças maiores em proposta à parte; português do Brasil também para Portugal. Aprovações confirmam: entregam logo, a IA oferece horário, o relatório mede tempo de resposta e conversas que viraram venda (aprovado por Filipe)
 - 2026-09-29 — Fase 5, stack: Next.js 16 + TS + Tailwind v4 na Vercel; GSAP + ScrollTrigger só na abertura e nas entradas das seções; Lenis (desligado com movimento reduzido); sem SplitText, Motion, 3D, View Transitions, Rive, Lottie; vídeo nativo com pôster; Cal.com como link externo sem embed; Vercel Web Analytics sem cookies; cabeçalhos de segurança no `next.config` (aprovado por Filipe)
+- 2026-09-29 — Fase 6: esqueleto da home aprovado ("está ótimo") (aprovado por Filipe)
+- 2026-09-29 — Entrada em vídeo: ao abrir a home, o vídeo toca em tela cheia com o wordmark (~3 s) e se fecha no círculo da abertura do hero; botão Pular, rolar ou tecla encurtam; só na primeira visita da sessão; não aparece com movimento reduzido nem sem JavaScript. Complementa a assinatura "a abertura" (escolha de Filipe)
 
 ## Stack (fase 5)
 
@@ -74,7 +76,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Seção | Estrutura | Conferida 375/1440 | Animação |
 |---|---|---|---|
 | Cabeçalho + menu do celular | ok | — | — |
-| Hero (abertura estática) | ok | — | — |
+| Entrada em vídeo (tela cheia → círculo) | ok | 375/1440 ok, aguardando ok de Filipe | ok (Web Animations, sem GSAP) |
+| Hero (abertura estática, anel de marcas, vídeo aquecido) | ok | 375/1440 ok, aguardando ok de Filipe | — |
 | A matéria bruta | ok | — | — |
 | O mecanismo por dentro | ok | — | — |
 | Escada de ofertas | ok | — | — |
@@ -88,6 +91,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | /sites, /atendimento-ia, /sob-medida, /privacidade, 404 | — | — | — |
 
 ## Pendências
+
+- [ ] O vídeo `abertura.mp4` tem texto sem sentido gerado por IA na interface que aparece a partir de ~2 s ("Seamlium", "Premium Sistema sistems", "UAIN NOW"); na entrada em tela cheia fica visível. Regenerar o vídeo sem texto, ou usar o outro vídeo (`BrandForge_website_hero_section…115240.mp4`) se for limpo — **quem:** Filipe/nós — desde 2026-09-29
 
 - [ ] Comprimir `public/midia/abertura.mp4` (1280×720, 10 s, 3 MB): não há ffmpeg na máquina; instalar só com ok de Filipe — **quem:** nós — desde 2026-09-29
 - [ ] Capturas de tela reais do Memphis Burger e do Rapé Xingu para o portfólio (etapa B) — **quem:** nós — desde 2026-09-29

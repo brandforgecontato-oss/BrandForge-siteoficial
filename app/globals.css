@@ -98,6 +98,30 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
 }
 
+/* A entrada (components/secoes/Entrada.tsx): escondida por padrão, inclusive sem JavaScript */
+.entrada {
+  display: none;
+}
+html[data-entrada] .entrada {
+  display: flex;
+}
+html[data-entrada] body {
+  overflow: hidden;
+}
+.entrada-marca {
+  animation: entrada-marca 1.2s var(--ease-ponteiro) 0.3s both;
+}
+@keyframes entrada-marca {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Acordeão com <details>: esconde o marcador padrão */
 details > summary {
   list-style: none;

@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Cabecalho } from "@/components/layout/Cabecalho";
 import { CtaFixoCelular } from "@/components/layout/CtaFixoCelular";
 import { Rodape } from "@/components/layout/Rodape";
+import { Entrada } from "@/components/secoes/Entrada";
 import { JsonLdNegocio } from "@/components/seo/JsonLd";
 import { site, siteIndexavel, urlDoSite } from "@/lib/site";
 import "./globals.css";
@@ -11,6 +12,9 @@ import "./globals.css";
 // Tipografia da identidade (DIRECAO A): Playfair Display 600 no display, Inter 400/500 no corpo.
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["600"], variable: "--font-playfair", display: "swap" });
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-inter", display: "swap" });
+
+// Entrada só na home, na primeira visita da sessão e sem movimento reduzido.
+const scriptEntrada = `try{if(location.pathname==="/"&&!sessionStorage.getItem("bf-entrada")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.setAttribute("data-entrada","")}catch(e){}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(urlDoSite()),
@@ -29,8 +33,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${playfair.variable} ${inter.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Decide antes da primeira pintura se a entrada em vídeo aparece (sem piscar o hero) */}
+        <script dangerouslySetInnerHTML={{ __html: scriptEntrada }} />
+      </head>
       <body>
+        <Entrada />
         <Cabecalho />
         {children}
         <Rodape />

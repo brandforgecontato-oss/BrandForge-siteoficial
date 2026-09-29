@@ -22,9 +22,11 @@ export function Hero() {
 
         {/* A abertura: o vídeo visto através de um círculo, como o fundo de caixa de um relógio */}
         <div className="flex justify-center lg:col-span-5 lg:justify-end">
-          <div className="relative aspect-square w-[70%] overflow-hidden rounded-full border border-filete lg:w-full lg:max-w-[440px]">
-            <video
-              className="absolute inset-0 size-full object-cover"
+          <div className="relative aspect-square w-[78%] lg:w-full lg:max-w-[460px]">
+            <Marcas />
+            <div data-abertura className="absolute inset-[7%] overflow-hidden rounded-full border border-ouro/30">
+              <video
+                className="absolute inset-0 size-full scale-110 object-cover [filter:sepia(0.45)_saturate(0.85)_brightness(0.95)]"
               src="/midia/abertura.mp4"
               poster="/midia/abertura-poster.webp"
               autoPlay
@@ -32,11 +34,42 @@ export function Hero() {
               loop
               playsInline
               preload="metadata"
-              aria-hidden="true"
-            />
+                aria-hidden="true"
+              />
+              {/* Bordas escurecidas: o mecanismo aparece do centro, como sob o vidro */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-[radial-gradient(circle,transparent_45%,rgb(23_20_15/0.9)_100%)]"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+// Anel de marcas finas em volta da abertura, como o bisel de um relógio (60 marcas, 12 maiores).
+function Marcas() {
+  const marcas = Array.from({ length: 60 }, (_, i) => i);
+  return (
+    <svg aria-hidden="true" viewBox="0 0 200 200" className="absolute inset-0 size-full">
+      <circle cx="100" cy="100" r="99" fill="none" stroke="var(--color-filete)" strokeWidth="0.4" />
+      {marcas.map((i) => {
+        const maior = i % 5 === 0;
+        return (
+          <line
+            key={i}
+            x1="100"
+            y1="2.5"
+            x2="100"
+            y2={maior ? 6.5 : 4.5}
+            stroke={maior ? "var(--color-ouro)" : "var(--color-bronze)"}
+            strokeWidth={maior ? 0.6 : 0.35}
+            transform={`rotate(${i * 6} 100 100)`}
+          />
+        );
+      })}
+    </svg>
   );
 }
