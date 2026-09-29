@@ -17,7 +17,7 @@ Fonte das informações: PDF de identidade visual "BrandForge — Identidade vis
 - Diferenciais reais (o cliente disse ou dá para provar):
   - equipe de desenvolvedores por trás (não é freelancer solo nem agência genérica)
   - compromisso de prazo: não há histórico que prove "sempre no prazo". Na copy, entra como promessa verificável (ex.: prazo combinado por escrito antes de começar)
-  - portfólio real (3 projetos, seção 6)
+  - portfólio de demonstração (3 projetos conceituais, seção 6). Não são clientes reais
   - o próprio site como demonstração do que a equipe entrega
   - ainda não existem: cases com resultado, números de entregas, prazo médio
 - Concorrentes ou referências citados pelo cliente (inspiração, não cópia): https://viverdeia.ai/paid · https://www.sitecomai.com/pt
@@ -72,7 +72,7 @@ Não se aplica como SEO local: atendimento 100% online, sem endereço físico. O
   - `WhatsApp Image … 12.02.53.jpeg` — estrutura de linhas douradas com horizonte, sem texto
   - `WhatsApp Image … 12.03.06.jpeg` — torre com contornos dourados; tem texto gerado por IA gravado
 - Pedido de Filipe: vídeos com animação imersiva, futurista e tecnológica
-- Portfólio público:
+- Portfólio público (projetos fictícios, feitos como demonstração; no site entram como "projetos conceituais", nunca como clientes):
   - Memphis Burger (hamburgueria, Sudoeste, Brasília) — https://chicagoburgersite.vercel.app/
   - Imobiliária — endereço público pendente
   - Rapé Xingu (e-commerce de produto artesanal) — https://site-rapechingu.vercel.app

@@ -97,3 +97,7 @@ Os links da Vercel são do painel da equipe `brandforgecontato-oss`. O conector 
 - Mensagem automática no WhatsApp: dizer que a pessoa veio pelo site e quer um orçamento de (nome do serviço). Cada página de serviço leva a sua mensagem
 - E-mail: "Brandoforge.contato@gmail.com" (como veio). O CLAUDE.md do projeto usa brandforge.contato@gmail.com, sem o "o": confirmar
 - Instagram: @brandforgetech (https://instagram.com/brandforgetech)
+
+## 2026-09-29 — Portfólio: natureza dos projetos (Filipe)
+
+- "esses links são fictícios, só serão usados como portfólio": os sites são demonstrações, não clientes reais. Não pedir autorização a cliente; não apresentar como case, depoimento ou resultado

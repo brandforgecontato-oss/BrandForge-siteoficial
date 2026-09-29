@@ -39,6 +39,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Diferenciais: sem cases, números ou prazo médio por enquanto; equipe de desenvolvedores; compromisso de prazo vira promessa verificável na copy (aprovado por Filipe)
 - 2026-09-29 — Portfólio público: hamburgueria, imobiliária e Rapé Xingu (este como e-commerce de produto artesanal). Paola Queen fica de fora (aprovado por Filipe)
 - 2026-09-29 — Contato: WhatsApp +55 61 99901-5955 com mensagem pronta por serviço; brandforge.contato@gmail.com; Instagram @brandforgetech; seg a sáb, 9h às 18h; 100% online, sem endereço; reuniões marcadas pelo WhatsApp, Cal.com como alternativa; domínio a registrar na fase 9 (aprovado por Filipe)
+- 2026-09-29 — Os projetos do portfólio são fictícios (sites de demonstração, não clientes reais). No site, aparecem como "projetos conceituais" ou "demonstrações", nunca como cases de cliente, sem depoimento nem resultado (informado por Filipe)
 - 2026-09-29 — BRIEF da fase 1 aprovado (aprovado por Filipe)
 
 ## Stack (fase 5)
@@ -55,7 +56,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - [ ] Abrir a pasta `template_sites-main` como pasta do VS Code (hoje está aberta a pasta de cima, `site-BrandForge`); sem isso o Claude Code não carrega `CLAUDE.md`, as skills do projeto nem o Playwright MCP do `.mcp.json` — **quem:** nós — desde 2026-09-29
 - [ ] Conferir o Playwright MCP ativo (abrir `about:blank` + screenshot) depois de reabrir na pasta certa — **quem:** nós — desde 2026-09-29
 - [ ] Imagens com texto gravado: torre ("The Forge", subtítulo sem sentido gerado por IA) e rede dourada ("THE INTELLIGENCE / BRANDFORGE", fonte fora da identidade). Recortar ou regenerar sem texto — **quem:** Filipe/nós — desde 2026-09-29
-- [ ] Portfólio: enviar o endereço público da imobiliária; confirmar o nome da hamburgueria (endereço "chicagoburgersite", site diz "Memphis Burger"); uma linha do que foi feito em cada projeto; ok de cada cliente para aparecer no portfólio — **quem:** Filipe — desde 2026-09-29
+- [ ] Portfólio: enviar o endereço público da imobiliária; uma linha do que cada projeto demonstra — **quem:** Filipe — desde 2026-09-29
 - [ ] Pedir os originais das imagens enviadas pelo WhatsApp (vieram comprimidas) — **quem:** Filipe — desde 2026-09-29
 
 ## Provisórios a trocar antes de publicar
