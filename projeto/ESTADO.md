@@ -4,8 +4,8 @@
 
 ## Agora
 
-- **Fase atual:** 2 — Nicho regulado (não iniciada)
-- **Próximo passo:** abrir a fase 2 e checar se algum ponto do site cai em regra de nicho regulado (produto +18 no portfólio, promessas sobre IA)
+- **Fase atual:** 3 — Direção criativa (não iniciada)
+- **Próximo passo:** abrir a fase 3: analisar as referências (viverdeia.ai, sitecomai.com) e o portfólio anti-repetição, e propor direções visuais sobre a identidade "Obsidian e Ouro"
 - **Modelo recomendado:** Opus
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -15,7 +15,7 @@
 |---|---|---|---|
 | 0 | Ambiente | concluída | — |
 | 1 | Briefing | concluída | `projeto/BRIEF.md` |
-| 2 | Nicho regulado | não iniciada | `projeto/BRIEF.md` §2 |
+| 2 | Nicho regulado | concluída | `projeto/BRIEF.md` §2 |
 | 3 | Direção criativa | não iniciada | `projeto/DIRECAO.md` |
 | 4 | Copy | não iniciada | `projeto/COPY.md` |
 | 5 | Stack | não iniciada | seção "Stack" abaixo |
@@ -41,6 +41,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Contato: WhatsApp +55 61 99901-5955 com mensagem pronta por serviço; brandforge.contato@gmail.com; Instagram @brandforgetech; seg a sáb, 9h às 18h; 100% online, sem endereço; reuniões marcadas pelo WhatsApp, Cal.com como alternativa; domínio a registrar na fase 9 (aprovado por Filipe)
 - 2026-09-29 — Os projetos do portfólio são fictícios (sites de demonstração, não clientes reais). No site, aparecem como "projetos conceituais" ou "demonstrações", nunca como cases de cliente, sem depoimento nem resultado (informado por Filipe)
 - 2026-09-29 — BRIEF da fase 1 aprovado (aprovado por Filipe)
+- 2026-09-29 — Nicho não regulado; 6 regras gerais para a copy (CDC, LGPD/RGPD) em `BRIEF.md` §2 (aprovado por Filipe)
+- 2026-09-29 — Rapé Xingu fica no portfólio com link, sem preço nem alegação de saúde no nosso texto (decisão de Filipe, ciente da Lei 9.294/1996)
 
 ## Stack (fase 5)
 
@@ -59,6 +61,9 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - [ ] Portfólio: enviar o endereço público da imobiliária; uma linha do que cada projeto demonstra — **quem:** Filipe — desde 2026-09-29
 - [ ] Pedir os originais das imagens enviadas pelo WhatsApp (vieram comprimidas) — **quem:** Filipe — desde 2026-09-29
 
+- [ ] Confirmar com advogado o link para o Rapé Xingu no portfólio (Lei 9.294/1996, RDC Anvisa 15/2003) antes da fase 9 — **quem:** Filipe — desde 2026-09-29
+- [ ] Política de privacidade (Cal.com + eventual analytics; LGPD/RGPD) — **quem:** nós, fases 4 e 6 — desde 2026-09-29
+
 ## Provisórios a trocar antes de publicar
 
 - Endereço público da imobiliária no portfólio (pendente)
@@ -70,4 +75,5 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 ## Diário curto
 
 - 2026-09-29 — Fase 0: git iniciado sobre o `origin/main` (só LICENSE), identidade local BrandForge, remotes `origin` e `template` com o usuário da empresa, `npm install` e Chromium do Playwright ok.
+- 2026-09-29 — Fase 2: nicho não regulado; regras gerais de CDC/LGPD/RGPD aprovadas; alerta de tabaco no Rapé Xingu registrado.
 - 2026-09-29 — Fase 1: briefing a partir do PDF de identidade + entrevista. Trilha A, 3 a 5 páginas, premium futurista, WhatsApp + Cal.com, portfólio com 3 projetos.

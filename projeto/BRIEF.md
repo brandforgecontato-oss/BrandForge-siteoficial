@@ -26,9 +26,15 @@ Fonte das informações: PDF de identidade visual "BrandForge — Identidade vis
 
 Critérios em `.claude/skills/comecar/referencias/nicho-regulado.md`.
 
-- Nicho regulado? a confirmar (fase 2). Ponto de atenção: o portfólio inclui um produto +18 (Rapé Xingu)
-- Regras aplicáveis à copy: —
-- Confirmado com o cliente ou com o conselho? —
+- Nicho regulado? **não**. Agência de sites, automação e IA não tem conselho de classe com código de publicidade. Valem os limites gerais: CDC, LGPD e, pelo público em Portugal, RGPD
+- Regras aplicáveis à copy:
+  1. Sem promessa de resultado com IA ("aumente vendas em X%", "substitua seu atendente"). Descrever o que a solução faz, não garantir resultado — CDC art. 37
+  2. Portfólio sempre como "projeto conceitual" / "demonstração"; sem logos de clientes, depoimentos ou números inventados — CDC art. 37 §3 (enganosa por omissão)
+  3. Prazo ("combinado por escrito antes de começar") e qualquer preço publicado ("a partir de") vinculam a oferta: só entram se forem cumpridos — CDC art. 30
+  4. Política de privacidade obrigatória (Cal.com coleta nome e e-mail); aviso de cookies se houver rastreamento/analytics (decidir na fase 5) — LGPD e RGPD
+  5. "Equipe de desenvolvedores" só entra se for verdade na data de publicação — CDC art. 37
+  6. Rapé Xingu no portfólio: mantido com link (decisão de Filipe). Rapé costuma conter tabaco: a Lei 9.294/1996 proíbe propaganda de produtos fumígenos na internet e a RDC Anvisa 15/2003 proíbe a venda de derivados de tabaco online. No nosso texto: sem preço, sem alegação de saúde, apresentado só como trabalho de design — fontes: [Lei 9.294/1996](https://www2.camara.leg.br/legin/fed/lei/1996/lei-9294-15-julho-1996-349045-normaatualizada-pl.html) · [INCA, legislação por tema](https://www.inca.gov.br/observatorio-da-politica-nacional-de-controle-do-tabaco/legislacao-por-tema)
+- Confirmado com o cliente ou com o conselho? Não há conselho (não se aplica). Regras aprovadas por Filipe em 29/09/2026. Link do Rapé Xingu: confirmar com advogado antes de publicar (pendência)
 
 ## 3. Dados do cliente
 
