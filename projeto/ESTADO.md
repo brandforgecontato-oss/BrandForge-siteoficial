@@ -56,6 +56,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Fase 5, stack: Next.js 16 + TS + Tailwind v4 na Vercel; GSAP + ScrollTrigger só na abertura e nas entradas das seções; Lenis (desligado com movimento reduzido); sem SplitText, Motion, 3D, View Transitions, Rive, Lottie; vídeo nativo com pôster; Cal.com como link externo sem embed; Vercel Web Analytics sem cookies; cabeçalhos de segurança no `next.config` (aprovado por Filipe)
 - 2026-09-29 — Fase 6: esqueleto da home aprovado ("está ótimo") (aprovado por Filipe)
 - 2026-09-29 — Entrada em vídeo: ao abrir a home, o vídeo toca em tela cheia com o wordmark (~3 s) e se fecha no círculo da abertura do hero; botão Pular, rolar ou tecla encurtam; só na primeira visita da sessão; não aparece com movimento reduzido nem sem JavaScript. Complementa a assinatura "a abertura" (escolha de Filipe)
+- 2026-09-29 — Entrada e hero aprovados com o vídeo terminando dentro do círculo; testada e descartada a variante com vídeo de fundo atrás do hero (aprovado por Filipe)
 
 ## Stack (fase 5)
 
@@ -76,8 +77,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Seção | Estrutura | Conferida 375/1440 | Animação |
 |---|---|---|---|
 | Cabeçalho + menu do celular | ok | — | — |
-| Entrada em vídeo (tela cheia → círculo) | ok | 375/1440 ok, aguardando ok de Filipe | ok (Web Animations, sem GSAP) |
-| Hero (abertura estática, anel de marcas, vídeo aquecido) | ok | 375/1440 ok, aguardando ok de Filipe | — |
+| Entrada em vídeo (tela cheia → círculo) | ok | aprovada | ok (Web Animations, sem GSAP) |
+| Hero (abertura estática, anel de marcas, vídeo aquecido) | ok | aprovada | — |
 | A matéria bruta | ok | — | — |
 | O mecanismo por dentro | ok | — | — |
 | Escada de ofertas | ok | — | — |
