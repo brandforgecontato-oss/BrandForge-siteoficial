@@ -4,8 +4,8 @@
 
 ## Agora
 
-- **Fase atual:** 3 — Direção criativa (não iniciada)
-- **Próximo passo:** abrir a fase 3: analisar as referências (viverdeia.ai, sitecomai.com) e o portfólio anti-repetição, e propor direções visuais sobre a identidade "Obsidian e Ouro"
+- **Fase atual:** 4 — Copy (não iniciada)
+- **Próximo passo:** abrir a fase 4: montar a estrutura de páginas e seções da direção A (hero, escada de ofertas, como funciona, portfólio, objeções, CTA) e escrever a copy a partir de `projeto/referencias/posicionamento.md`; conferir antes o dado da KPMG
 - **Modelo recomendado:** Opus
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -16,7 +16,7 @@
 | 0 | Ambiente | concluída | — |
 | 1 | Briefing | concluída | `projeto/BRIEF.md` |
 | 2 | Nicho regulado | concluída | `projeto/BRIEF.md` §2 |
-| 3 | Direção criativa | não iniciada | `projeto/DIRECAO.md` |
+| 3 | Direção criativa | concluída | `projeto/DIRECAO.md` |
 | 4 | Copy | não iniciada | `projeto/COPY.md` |
 | 5 | Stack | não iniciada | seção "Stack" abaixo |
 | 6 | Construção | não iniciada | código em `app/`, `components/`, `lib/` |
@@ -47,6 +47,9 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — A operação cumpre as promessas do posicionamento (diagnóstico grátis de 20 a 30 min, cliente aprova as respostas da IA, site/domínio/dados do cliente, preço fechado sem taxa surpresa, relatório mensal); podem entrar na copy (confirmado por Filipe)
 - 2026-09-29 — Consultoria e treinamento em IA entram como curso à parte, fora da escada de ofertas, negociado pelo WhatsApp (decisão de Filipe)
 - 2026-09-29 — Não existe telefone para Portugal; o contato do site é só o WhatsApp +55 61 99901-5955 para os dois países (informado por Filipe)
+- 2026-09-29 — Fase 3, conceito central: "A forja": forjar peça por peça; o site mostra a matéria bruta (o problema do negócio) virando uma peça sob medida. Vem do nome e da assinatura "IA sob medida" (aprovado por Filipe)
+- 2026-09-29 — Fase 3, referência fora do nicho: relojoaria e cutelaria artesanal (precisão visível, ritmo lento, material como protagonista) (escolha de Filipe)
+- 2026-09-29 — Direção A "Manufatura" aprovada, sem ajustes: paleta escura da identidade (obsidiana, marfim, areia, ouro claro, bronze), Playfair Display + Inter, raio 4 px, grão fixo, colunas 7/4 com texto à esquerda, assinatura "a abertura" (vídeo num círculo que se abre em tela cheia com a rolagem). B e C descartadas; detalhes em `projeto/DIRECAO.md` (aprovado por Filipe)
 
 ## Stack (fase 5)
 
@@ -79,6 +82,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
 
 ## Diário curto
+
+- 2026-09-29 — Fase 3: portfólio do template vazio (primeiro site). Conceito "A forja", referência relojoaria/cutelaria, três direções com pranchas fotografadas via Playwright (Node) em 1440/375; escolhida A (Manufatura). Pranchas apagadas; screenshots em `projeto/referencias/direcoes/`.
 
 - 2026-09-29 — Fase 0: git iniciado sobre o `origin/main` (só LICENSE), identidade local BrandForge, remotes `origin` e `template` com o usuário da empresa, `npm install` e Chromium do Playwright ok.
 - 2026-09-29 — Fase 2: nicho não regulado; regras gerais de CDC/LGPD/RGPD aprovadas; alerta de tabaco no Rapé Xingu registrado.
