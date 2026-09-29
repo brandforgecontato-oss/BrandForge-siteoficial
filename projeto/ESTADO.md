@@ -59,6 +59,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Entrada e hero aprovados com o vídeo terminando dentro do círculo; testada e descartada a variante com vídeo de fundo atrás do hero (aprovado por Filipe)
 - 2026-09-29 — Seção "A matéria bruta" aprovada com a imagem do horizonte (aprovado por Filipe)
 - 2026-09-29 — Movimento antecipado da etapa D a pedido de Filipe ("mais imersão ao mexer no site"): Lenis, a abertura pinada no mecanismo (vídeo nasce num círculo e abre em tela cheia), entradas das seções, bisel do hero girando, paralaxe na imagem, linha do tempo em ouro. Tudo desligado com movimento reduzido (pedido de Filipe)
+- 2026-09-29 — Imagem de "A matéria bruta" trocada do horizonte para a torre (`torre.webp`, recorte sem o texto gerado por IA) (pedido de Filipe)
 
 ## Stack (fase 5)
 
@@ -81,7 +82,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Cabeçalho + menu do celular | ok | — | — |
 | Entrada em vídeo (tela cheia → círculo) | ok | aprovada | ok (Web Animations, sem GSAP) |
 | Hero (abertura estática, anel de marcas, vídeo aquecido) | ok | aprovada | — |
-| A matéria bruta (imagem do horizonte) | ok | aprovada | entrada + paralaxe |
+| A matéria bruta (imagem da torre) | ok | aprovada | entrada + paralaxe |
 | O mecanismo por dentro | ok | — | a abertura (pin + scrub) |
 | Escada de ofertas | ok | — | — |
 | Como funciona | ok | — | — |

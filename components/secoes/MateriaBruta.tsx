@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Secao } from "@/components/ui/Secao";
-import horizonte from "@/public/midia/horizonte.webp";
+import torre from "@/public/midia/torre.webp";
 
 const problemas = [
   "A mensagem que chega às 22h e só é respondida no dia seguinte, quando o cliente já fechou com outro.",
@@ -23,18 +23,18 @@ export function MateriaBruta() {
           </p>
         </div>
 
-        {/* Apoio visual: a estrutura ainda em obra, a matéria antes de virar peça */}
+        {/* Apoio visual: a torre de peças encaixadas, a matéria virando estrutura */}
         <div className="lg:col-span-4 lg:col-start-9 lg:row-span-2 lg:row-start-1">
           <div className="relative aspect-[4/3] overflow-hidden rounded-peca border border-filete lg:sticky lg:top-28 lg:aspect-[3/4]">
             <Image
-              src={horizonte}
+              src={torre}
               alt=""
               fill
               data-paralaxe
               sizes="(min-width: 1024px) 380px, 100vw"
-              className="object-cover object-[20%_50%] [filter:sepia(0.2)]"
+              className="object-cover object-[50%_30%] [filter:sepia(0.2)]"
             />
-            <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_40%_45%,transparent_40%,rgb(23_20_15/0.75)_100%)]" />
+            <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_40%,rgb(23_20_15/0.75)_100%)]" />
           </div>
         </div>
 
