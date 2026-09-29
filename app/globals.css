@@ -1,10 +1,112 @@
 @import "tailwindcss";
 
-/* Tokens de cor, fonte e movimento entram aqui na fase 6, a partir de projeto/DIRECAO.md:
-   @theme { --color-...: ...; }  e  @theme inline { --font-display: var(--font-...-next); }
-   Tailwind v4: não existe tailwind.config.js, os tokens vivem neste arquivo. */
+/* Tokens da direção A "Manufatura" (projeto/DIRECAO.md). Tailwind v4: os tokens vivem aqui. */
+@theme {
+  /* Paleta da identidade "Obsidian e Ouro", só a parte escura */
+  --color-obsidiana: #17140f; /* fundo da página */
+  --color-obsidiana-alta: #221d16; /* superfícies elevadas */
+  --color-marfim: #f1e9d8; /* texto principal (15,2:1) */
+  --color-areia: #b7ab93; /* texto de apoio (8,1:1) */
+  --color-ouro: #d4af6a; /* acento: botão, linha, detalhes (8,9:1) */
+  --color-bronze: #8c5a2b; /* só filetes e ícones decorativos, nunca texto */
+  --color-filete: rgb(212 175 106 / 0.2); /* borda interna 1px em ouro a 20% */
 
-/* Rede de segurança para animações e transições CSS. GSAP e Motion têm tratamento próprio
+  /* Escala tipográfica 1,333 (quarta justa), base 16px */
+  --text-apoio: 0.875rem;
+  --text-apoio--line-height: 1.5;
+  --text-corpo: 1rem;
+  --text-corpo--line-height: 1.65;
+  --text-destaque: 1.333rem;
+  --text-destaque--line-height: 1.5;
+  --text-h3: 1.777rem;
+  --text-h3--line-height: 1.25;
+  --text-h2: 2.369rem;
+  --text-h2--line-height: 1.15;
+  --text-h1: 3.5rem; /* 56/60 no desktop */
+  --text-h1--line-height: 1.0714;
+  --text-h1-cel: 2.25rem; /* 36/40 no celular */
+  --text-h1-cel--line-height: 1.111;
+
+  /* Forma: raio 4px em tudo, sem sombra */
+  --radius-peca: 4px;
+
+  /* Movimento com massa: curvas lentas, como um ponteiro */
+  --ease-ponteiro: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-massa: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Espaço como material: respiro vertical das seções */
+  --spacing-secao: 7.5rem;
+  --spacing-secao-cel: 5rem;
+}
+
+@theme inline {
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-obsidiana);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-obsidiana);
+    color: var(--color-marfim);
+    font-family: var(--font-sans);
+    font-size: var(--text-corpo);
+    line-height: var(--text-corpo--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-ouro);
+    color: var(--color-obsidiana);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ouro);
+    outline-offset: 3px;
+    border-radius: var(--radius-peca);
+  }
+
+  /* Âncoras não ficam escondidas atrás do cabeçalho fixo */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+/* Grão fino fixo por cima de tudo: metal escovado a 3% */
+.grao {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+
+/* Acordeão com <details>: esconde o marcador padrão */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Rede de segurança para animações e transições CSS. GSAP tem tratamento próprio
    (skill stack-web). Não use scroll-behavior: smooth no html: quebra o ScrollTrigger. */
 @media (prefers-reduced-motion: reduce) {
   *,

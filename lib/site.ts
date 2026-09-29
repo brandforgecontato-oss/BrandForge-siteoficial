@@ -30,20 +30,46 @@ export type Site = {
 };
 
 export const site: Site = {
-  nome: "",
-  descricao: "",
+  nome: "BrandForge",
+  descricao:
+    "Sites, atendimento com IA no WhatsApp e automações sob medida para pequenos negócios no Brasil e em Portugal. Comece por um diagnóstico grátis.",
   paginas: ["/"],
   negocio: {
-    tipoSchema: "LocalBusiness",
-    telefone: "",
-    whatsapp: "",
-    email: "",
-    endereco: null,
-    horario: [],
-    redes: [],
+    tipoSchema: "ProfessionalService",
+    telefone: "+55-61-99901-5955",
+    whatsapp: "5561999015955",
+    email: "brandforge.contato@gmail.com",
+    endereco: null, // 100% online, sem endereço
+    horario: ["Mo-Sa 09:00-18:00"],
+    redes: ["https://www.instagram.com/brandforgetech"],
     registroProfissional: "",
   },
 };
+
+// Dados de contato exibidos no site (fonte: projeto/ESTADO.md, decisões de 29/09/2026).
+export const contato = {
+  telefoneExibido: "+55 61 99901-5955",
+  instagram: "@brandforgetech",
+  atendimento: "segunda a sábado, das 9h às 18h (horário de Brasília)",
+  alcance: "100% online, no Brasil e em Portugal",
+  calcom: "", // pendente: link do Cal.com (Filipe). Vazio = o link não aparece.
+  cnpj: "", // pendente, opcional
+};
+
+// Mensagens prontas do WhatsApp (projeto/COPY.md).
+const mensagensWhatsApp = {
+  diagnostico: "Olá! Vim pelo site da BrandForge e quero fazer meu diagnóstico gratuito.",
+  presenca: "Olá! Vim pelo site da BrandForge e quero fazer um orçamento de site.",
+  atendimento: "Olá! Vim pelo site da BrandForge e quero fazer um orçamento de atendimento com IA.",
+  sobMedida: "Olá! Vim pelo site da BrandForge e quero fazer um orçamento de uma solução sob medida.",
+  curso: "Olá! Vim pelo site da BrandForge e quero saber mais sobre o curso de IA.",
+} as const;
+
+export type AssuntoWhatsApp = keyof typeof mensagensWhatsApp;
+
+export function linkWhatsApp(assunto: AssuntoWhatsApp): string {
+  return `https://wa.me/${site.negocio.whatsapp}?text=${encodeURIComponent(mensagensWhatsApp[assunto])}`;
+}
 
 // URL canônica do site: variável explícita, depois o domínio de produção da Vercel, depois localhost.
 export function urlDoSite(): string {

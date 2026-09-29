@@ -4,8 +4,8 @@
 
 ## Agora
 
-- **Fase atual:** 6 — Construção (não iniciada)
-- **Próximo passo:** abrir a fase 6: copiar a mídia de `site-BrandForge/imagens-videos` para `public/` (comprimir vídeo, gerar pôster), montar tokens da direção A (cores, Playfair + Inter via `next/font`, grão) e construir as seções da home sem animação, conferindo 375/1440
+- **Fase atual:** 6 — Construção (etapa A concluída; etapa B em andamento)
+- **Próximo passo:** etapa B: mostrar o esqueleto a Filipe e refinar seção a seção na ordem da página, começando pelo hero (conferir 375/1440 e pedir ok de cada uma)
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -19,7 +19,7 @@
 | 3 | Direção criativa | concluída | `projeto/DIRECAO.md` |
 | 4 | Copy | concluída | `projeto/COPY.md` |
 | 5 | Stack | concluída | seção "Stack" abaixo |
-| 6 | Construção | não iniciada | código em `app/`, `components/`, `lib/` |
+| 6 | Construção | em andamento | código em `app/`, `components/`, `lib/` |
 | 7 | Revisão | não iniciada | `projeto/REVISAO.md` |
 | 8 | Preview e feedback | não iniciada | `projeto/FEEDBACK.md` |
 | 9 | Lançamento | não iniciada | seção "Lançamento" abaixo |
@@ -73,12 +73,28 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 
 | Seção | Estrutura | Conferida 375/1440 | Animação |
 |---|---|---|---|
+| Cabeçalho + menu do celular | ok | — | — |
+| Hero (abertura estática) | ok | — | — |
+| A matéria bruta | ok | — | — |
+| O mecanismo por dentro | ok | — | — |
+| Escada de ofertas | ok | — | — |
+| Como funciona | ok | — | — |
+| Compromissos | ok | — | — |
+| Portfólio | ok (sem imobiliária, sem capturas) | — | — |
+| Perguntas | ok | — | — |
+| Curso à parte | ok | — | — |
+| CTA final (Cal.com oculto até ter link) | ok | — | — |
+| Rodapé + CTA fixo no celular | ok | — | — |
+| /sites, /atendimento-ia, /sob-medida, /privacidade, 404 | — | — | — |
 
 ## Pendências
 
+- [ ] Comprimir `public/midia/abertura.mp4` (1280×720, 10 s, 3 MB): não há ffmpeg na máquina; instalar só com ok de Filipe — **quem:** nós — desde 2026-09-29
+- [ ] Capturas de tela reais do Memphis Burger e do Rapé Xingu para o portfólio (etapa B) — **quem:** nós — desde 2026-09-29
+
 - [ ] Abrir a pasta `template_sites-main` como pasta do VS Code (hoje está aberta a pasta de cima, `site-BrandForge`); sem isso o Claude Code não carrega `CLAUDE.md`, as skills do projeto nem o Playwright MCP do `.mcp.json` — **quem:** nós — desde 2026-09-29
 - [ ] Conferir o Playwright MCP ativo (abrir `about:blank` + screenshot) depois de reabrir na pasta certa — **quem:** nós — desde 2026-09-29
-- [ ] Imagens com texto gravado: torre ("The Forge", subtítulo sem sentido gerado por IA) e rede dourada ("THE INTELLIGENCE / BRANDFORGE", fonte fora da identidade). Recortar ou regenerar sem texto — **quem:** Filipe/nós — desde 2026-09-29
+- [x] Imagens com texto gravado: recortadas sem o texto em `public/midia/rede.webp` e `torre.webp` (2026-09-29). Original: torre ("The Forge", subtítulo sem sentido gerado por IA) e rede dourada ("THE INTELLIGENCE / BRANDFORGE", fonte fora da identidade). Recortar ou regenerar sem texto — **quem:** Filipe/nós — desde 2026-09-29
 - [ ] Portfólio: enviar o endereço público da imobiliária; uma linha do que cada projeto demonstra — **quem:** Filipe — desde 2026-09-29
 - [ ] Pedir os originais das imagens enviadas pelo WhatsApp (vieram comprimidas) — **quem:** Filipe — desde 2026-09-29
 
@@ -98,6 +114,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
 
 ## Diário curto
+
+- 2026-09-29 — Fase 6, etapa A: mídia em `public/midia/` (vídeo, pôster extraído via Edge, rede e torre recortadas sem texto, horizonte), `lib/site.ts` com dados reais e links de WhatsApp, tokens da direção A, Playfair + Inter via next/font, grão, 10 seções da home + cabeçalho/rodapé/CTA fixo. Lint ok; 375 e 1440 sem scroll horizontal, 1 H1.
 
 - 2026-09-29 — Fase 5: stack aprovada sem ajustes; `motion` desinstalado, `@vercel/analytics` 2.0.1 instalado; `npm run verificar` passou.
 - 2026-09-29 — Fase 4: KPMG conferido na página oficial; mapa de 5 páginas; copy escrita e aprovada seção por seção; revisão final com 2 correções. Imobiliária, Cal.com, CNPJ e formato do curso ficam a preencher.
