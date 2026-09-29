@@ -30,7 +30,7 @@ Fonte: documento "BrandForge: Identidade e Posicionamento", 29/09/2026, de Silve
 
 Pequenos entram pelo 1 ou pelo 2, e o 3 vira upgrade. Empresas maiores entram direto no 3, sempre a partir do diagnóstico. A escada é o que dá linha lógica entre um site simples e um projeto robusto.
 
-Consultoria e treinamento em IA (do BRIEF) não aparecem na escada: decidir na fase 4 onde entram (ver pendência no ESTADO).
+Consultoria e treinamento em IA ficam fora da escada: entram como **curso à parte**, um serviço próprio negociado pelo WhatsApp (decisão de Filipe, 29/09).
 
 ### Tom de voz
 
@@ -60,7 +60,7 @@ Diagnóstico (filtro de 3 perguntas; 20 a 30 min) → Proposta (1 página: o que
 
 - Filtro antes de marcar: o negócio recebe mensagens todo dia? Já perdeu cliente por demora? Quem decide é a pessoa que está falando com a BrandForge?
 - Mensalidade fixa por oferta inclui hospedagem, manutenção, ajustes, custos de WhatsApp e API dentro de um teto de mensagens, e o relatório mensal. Valores em aberto: o site não mostra preço até Filipe definir.
-- Contato: WhatsApp primeiro no Brasil, telefone primeiro em Portugal.
+- Contato: o documento fala em WhatsApp primeiro no Brasil e telefone primeiro em Portugal, mas ainda não existe número de Portugal. No site, o WhatsApp é o canal único para os dois países (Filipe, 29/09).
 
 ## O que NÃO entra no site (uso interno)
 
@@ -70,6 +70,6 @@ Tabela de concorrentes com nomes e preços, âncora de R$599, preço de R$1.200,
 
 1. **"Mais clientes"** é benefício, não garantia: pode ficar, sem número e sem "garantido". Nada de "aumente X%".
 2. **"Mostra o resultado em número" / "prova com número":** ainda não há cases medidos. O site promete *medir e reportar* (relatório mensal), não exibe números de clientes. Os números de exemplo (mensagens respondidas, horas poupadas) aparecem como o que será medido, nunca como resultado obtido.
-3. **Respostas às objeções viram oferta que obriga (CDC art. 30):** aprovação das respostas antes de ir ao ar, cliente assume a conversa quando quiser, site/domínio/dados do cliente, preço fechado sem taxa surpresa, relatório mensal. Só publicar se a operação cumpre todos.
+3. **Respostas às objeções viram oferta que obriga (CDC art. 30):** aprovação das respostas antes de ir ao ar, cliente assume a conversa quando quiser, site/domínio/dados do cliente, preço fechado sem taxa surpresa, relatório mensal. Filipe confirmou em 29/09 que a operação cumpre todas: podem entrar.
 4. **Diagnóstico grátis de 20 a 30 minutos:** também é oferta publicada; manter enquanto for verdade.
 5. **Dado da KPMG:** só com a fonte primária conferida e citada.
