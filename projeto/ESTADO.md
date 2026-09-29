@@ -4,9 +4,9 @@
 
 ## Agora
 
-- **Fase atual:** 4 — Copy (em andamento)
-- **Próximo passo:** fase 4: home aprovada inteira; escrever as páginas de serviço (`/sites`, `/atendimento-ia`, `/sob-medida`), depois `/privacidade`, 404, Open Graph e a revisão final
-- **Modelo recomendado:** Opus
+- **Fase atual:** 5 — Stack (não iniciada)
+- **Próximo passo:** abrir a fase 5: decidir as camadas da stack (movimento para "a abertura": GSAP + ScrollTrigger; Lenis ou não; vídeo), hospedagem (Vercel), analytics com ou sem cookies e o embed do Cal.com com `seguranca-web`
+- **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-29 por BrandForge
 
 ## Fases
@@ -17,7 +17,7 @@
 | 1 | Briefing | concluída | `projeto/BRIEF.md` |
 | 2 | Nicho regulado | concluída | `projeto/BRIEF.md` §2 |
 | 3 | Direção criativa | concluída | `projeto/DIRECAO.md` |
-| 4 | Copy | em andamento | `projeto/COPY.md` |
+| 4 | Copy | concluída | `projeto/COPY.md` |
 | 5 | Stack | não iniciada | seção "Stack" abaixo |
 | 6 | Construção | não iniciada | código em `app/`, `components/`, `lib/` |
 | 7 | Revisão | não iniciada | `projeto/REVISAO.md` |
@@ -52,6 +52,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Direção A "Manufatura" aprovada, sem ajustes: paleta escura da identidade (obsidiana, marfim, areia, ouro claro, bronze), Playfair Display + Inter, raio 4 px, grão fixo, colunas 7/4 com texto à esquerda, assinatura "a abertura" (vídeo num círculo que se abre em tela cheia com a rolagem). B e C descartadas; detalhes em `projeto/DIRECAO.md` (aprovado por Filipe)
 - 2026-09-29 — Fase 4, mapa: 5 páginas. Home (hero · matéria bruta · mecanismo por dentro · escada de ofertas · como funciona · compromissos por escrito · portfólio · perguntas · curso à parte · CTA final/rodapé), `/sites`, `/atendimento-ia`, `/sob-medida`, `/privacidade`. Sem página própria de portfólio; "Compromissos" no lugar de prova social (aprovado por Filipe)
 - 2026-09-29 — Fase 4, estilo: tom direto, próximo e preciso; sem travessão no texto do site; CTA único "Quero meu diagnóstico" (menu, hero, rodapé), botões de serviço "Falar sobre <serviço>" (aprovado por Filipe)
+- 2026-09-29 — Fase 4: copy aprovada inteira em `projeto/COPY.md` (home, `/sites`, `/atendimento-ia`, `/sob-medida`, `/privacidade` como rascunho, 404, Open Graph, navegação, rodapé). Dado da KPMG entra com fonte; "pequenos ajustes" na mensalidade, mudanças maiores em proposta à parte; português do Brasil também para Portugal. Aprovações confirmam: entregam logo, a IA oferece horário, o relatório mede tempo de resposta e conversas que viraram venda (aprovado por Filipe)
 
 ## Stack (fase 5)
 
@@ -86,6 +87,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
 
 ## Diário curto
+
+- 2026-09-29 — Fase 4: KPMG conferido na página oficial; mapa de 5 páginas; copy escrita e aprovada seção por seção; revisão final com 2 correções. Imobiliária, Cal.com, CNPJ e formato do curso ficam a preencher.
 
 - 2026-09-29 — Fase 3: portfólio do template vazio (primeiro site). Conceito "A forja", referência relojoaria/cutelaria, três direções com pranchas fotografadas via Playwright (Node) em 1440/375; escolhida A (Manufatura). Pranchas apagadas; screenshots em `projeto/referencias/direcoes/`.
 

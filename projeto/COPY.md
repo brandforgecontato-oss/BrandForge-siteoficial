@@ -33,7 +33,7 @@ Preenchido na fase 4, seção por seção. Cada seção só passa a "aprovada" c
 ### O mecanismo por dentro (vídeo em tela cheia) — aprovada em 2026-09-29 (com o dado)
 - Título: Primeiro a gente mede. Depois constrói.
 - Texto: Antes de propor qualquer coisa, olhamos como o seu negócio funciona hoje: por onde o cliente chega, quanto tempo espera, onde a conversa para. A solução sai dessa medida e se encaixa no que você já usa.
-- Dado (opcional, com link para a fonte): 45% dos 150 líderes brasileiros ouvidos pela KPMG relatam projetos de IA desconectados entre si. Fonte: KPMG Global Tech Report 2026 (https://kpmg.com/co/es/tendencias/2026/05/global-tech-report-2026.html)
+- Dado (com link para a fonte): 45% dos 150 líderes brasileiros ouvidos pela KPMG relatam projetos de IA desconectados entre si. Fonte: KPMG Global Tech Report 2026 (https://kpmg.com/co/es/tendencias/2026/05/global-tech-report-2026.html)
 - Fecho do dado: IA solta não resolve. IA encaixada no seu negócio, sim.
 - Vídeo: decorativo (alt vazio, `aria-hidden`); texto sobre o vídeo com fundo escurecido para manter contraste AA
 
@@ -71,7 +71,7 @@ Preenchido na fase 4, seção por seção. Cada seção só passa a "aprovada" c
   1. **Diagnóstico.** Você responde três perguntas pelo WhatsApp e marcamos de 20 a 30 minutos para entender a sua rotina: por onde o cliente chega e onde o tempo se perde.
   2. **Proposta.** Uma página com o que encontramos, a peça que resolve, o prazo e o preço fechado. Nada começa sem o seu ok.
   3. **Entrega.** A equipe constrói, você testa e aprova. No atendimento com IA, você aprova as respostas antes de irem ao ar.
-  4. **Relatório mensal.** Todo mês, o número do que mudou: mensagens respondidas, horas poupadas, conversas que viraram venda. A mensalidade cobre hospedagem, manutenção e ajustes.
+  4. **Relatório mensal.** Todo mês, o número do que mudou: mensagens respondidas, horas poupadas, conversas que viraram venda. A mensalidade cobre hospedagem, manutenção e pequenos ajustes.
 - Botão ao fim: Quero meu diagnóstico
 
 ### Compromissos por escrito — aprovada em 2026-09-29
@@ -140,3 +140,148 @@ Preenchido na fase 4, seção por seção. Cada seção só passa a "aprovada" c
 - Contato: WhatsApp +55 61 99901-5955 · brandforge.contato@gmail.com · Instagram @brandforgetech
 - Atendimento: segunda a sábado, das 9h às 18h (horário de Brasília) · 100% online, no Brasil e em Portugal
 - Legal: Política de privacidade · © 2026 BrandForge · CNPJ: a preencher (opcional)
+
+## Página: /sites — title: "Site para pequeno negócio, feito sob medida | BrandForge" — description: "Site, loja virtual e marca para pequenos negócios no Brasil e em Portugal. Rápido no celular, pronto para o Google e com o WhatsApp a um toque." — aprovada em 2026-09-29
+
+### Hero
+- H1: Site para pequeno negócio, feito sob medida
+- Apoio: Seja encontrado e passe confiança antes da primeira conversa. Site, loja virtual e marca, com o WhatsApp a um toque.
+- CTA principal: Falar sobre Presença · secundário: Quero meu diagnóstico
+
+### O que inclui
+- Site de uma ou mais páginas, pensado primeiro para o celular.
+- Loja virtual com catálogo e pedido pelo WhatsApp, quando você vende produto.
+- Marca (logo, cores e tipografia), se você ainda não tem.
+- Preparado para o Google e para os assistentes de IA: textos claros, carregamento rápido e dados organizados.
+- Botão de WhatsApp com mensagem pronta, em todas as páginas.
+- Hospedagem, manutenção e pequenos ajustes na mensalidade.
+
+### Para quem
+- Texto: Para quem é procurado no Google ou no Instagram e ainda não tem onde mostrar o próprio trabalho: clínica, escritório, loja, prestador de serviço.
+- Link: Veja dois projetos conceituais (âncora para o portfólio da home)
+
+### Perguntas
+1. **Já tenho Instagram. Preciso de site?** O Instagram mostra o dia a dia. O site é o que aparece quando alguém procura o seu serviço no Google, e ele é seu: não depende de algoritmo.
+2. **E se eu quiser mudar algo depois?** Pequenos ajustes estão incluídos na mensalidade. Mudanças maiores entram numa proposta à parte, com preço fechado.
+3. **O site e o domínio são meus?** Sim. O site, o domínio e os dados são seus.
+4. **Quanto tempo leva?** O prazo é combinado por escrito na proposta, antes de começar.
+
+### Próximo degrau
+- Texto: Quando o site começar a trazer mensagens, o atendimento com IA responde todas, a qualquer hora.
+- Link: Conheça o Atendimento IA (/atendimento-ia)
+
+### CTA final
+- Igual ao da home (Comece pela medida.)
+
+## Página: /atendimento-ia — title: "Atendente de IA no WhatsApp para o seu negócio | BrandForge" — description: "Atendente de IA no WhatsApp do seu negócio: responde a qualquer hora, passa a conversa para você quando precisa e registra cada cliente num CRM." — aprovada em 2026-09-29
+
+### Hero
+- H1: Atendente de IA no WhatsApp, sob medida para o seu negócio
+- Apoio: Atenda todo mundo, sem perder venda por demora. A IA responde as perguntas de sempre e você assume quando quiser.
+- CTA principal: Falar sobre Atendimento IA · secundário: Quero meu diagnóstico
+
+### Na prática (exemplo)
+- Texto: Um cliente manda às 22h: "Vocês abrem sábado? Quanto custa?". A IA responde na hora, com o horário e o preço que você aprovou, e oferece um horário. Se ele quiser falar com alguém, a conversa fica para você, já registrada no CRM.
+
+### O que inclui
+- Atendente de IA no WhatsApp do seu negócio, respondendo a qualquer hora.
+- Respostas montadas a partir do seu negócio: serviços, preços, horários e formas de pagamento.
+- Você aprova as respostas antes de irem ao ar.
+- A conversa passa para você quando precisa, e você assume qualquer uma na hora que quiser.
+- CRM para acompanhar cada cliente, do primeiro contato até fechar.
+- Relatório mensal: mensagens respondidas, tempo de resposta e conversas que viraram venda.
+- Hospedagem, manutenção e pequenos ajustes na mensalidade.
+
+### Para quem
+- Texto: Para quem recebe mensagem todo dia e já perdeu cliente por demora.
+
+### Perguntas
+1. **Já uso respostas automáticas do WhatsApp Business. É a mesma coisa?** Não. Resposta automática manda sempre o mesmo texto. O atendente de IA entende a pergunta e responde com as informações do seu negócio.
+2. **E se a IA errar com meu cliente?** Você aprova as respostas antes de irem ao ar e assume qualquer conversa na hora que quiser.
+3. **As conversas e os dados são meus?** Sim. Os dados são seus.
+4. **Quanto tempo leva?** O prazo é combinado por escrito na proposta, antes de começar.
+
+### Próximo degrau
+- Texto: Se o gargalo está depois do atendimento, no orçamento, na agenda ou no estoque, a peça é sob medida.
+- Link: Conheça o Sob medida (/sob-medida)
+
+### CTA final
+- Igual ao da home (Comece pela medida.)
+
+## Página: /sob-medida — title: "Automação com IA sob medida para empresas | BrandForge" — description: "Sistemas, automações e integrações com IA, desenhados a partir de um diagnóstico da sua operação. Para negócios no Brasil e em Portugal." — aprovada em 2026-09-29
+
+### Hero
+- H1: Automação com IA sob medida para a sua operação
+- Apoio: Resolvemos o gargalo específico do seu negócio, conectando as ferramentas que você já usa. Tudo começa pelo diagnóstico.
+- CTA principal: Falar sobre Sob medida · secundário: Quero meu diagnóstico
+
+### Exemplos do que dá para construir
+- Texto: Cada peça sai do diagnóstico, então nenhuma é igual. Alguns exemplos do tipo de gargalo que resolvemos:
+- Itens:
+  - O orçamento que junta dados do WhatsApp, da planilha e do estoque e sai pronto para enviar.
+  - A agenda que confirma, remarca e lembra o cliente sem ninguém digitar.
+  - O pedido que cai direto no sistema, sem copiar e colar.
+  - O relatório do mês que se monta sozinho.
+
+### Como é feito
+- Diagnóstico da operação: onde o processo trava e quanto tempo ele consome.
+- Proposta de uma página, com escopo, prazo e preço fechados.
+- Construção e integração com as ferramentas que você já usa.
+- Testes com você antes de ir ao ar.
+- Manutenção, pequenos ajustes e relatório mensal.
+
+### Empresa maior?
+- Texto: O caminho é o mesmo: diagnóstico primeiro, proposta por escrito depois, com escopo, prazo e preço fechados.
+
+### Perguntas
+1. **Preciso trocar os sistemas que já uso?** A ideia é conectar o que você já tem. Se algo precisar mudar, isso aparece na proposta, antes de começar.
+2. **Os dados da minha empresa ficam com quem?** Os dados são seus.
+3. **Quanto custa e quanto tempo leva?** Depende do gargalo. Preço e prazo vêm fechados e por escrito na proposta.
+
+### Fecho
+- Texto: Não sabe qual peça o seu negócio precisa? É para isso que existe o diagnóstico.
+- CTA final: igual ao da home (Comece pela medida.)
+
+## Página: /privacidade — title: "Política de privacidade | BrandForge" — description: "Como a BrandForge trata os dados de quem visita o site, fala pelo WhatsApp ou agenda uma conversa pelo Cal.com, segundo a LGPD e o RGPD." — aprovada em 2026-09-29 (rascunho; revisar com advogado)
+
+> Rascunho em linguagem simples. Revisar com advogado antes da fase 9 (junto com a pendência do Rapé Xingu). Atualizar se a fase 5 decidir por analytics com cookies.
+
+- H1: Política de privacidade
+- Última atualização: a preencher na publicação
+- **Quem somos.** BrandForge, [razão social e CNPJ: a preencher]. Contato para assuntos de privacidade: brandforge.contato@gmail.com.
+- **O que coletamos pelo site.** O site não tem formulário. Coletamos só:
+  - dados técnicos de acesso (endereço IP, navegador, páginas visitadas), registrados pela hospedagem para segurança e funcionamento;
+  - nome, e-mail e o que você escrever ao agendar uma conversa pelo Cal.com.
+- **WhatsApp.** Ao tocar num botão de WhatsApp, você sai do site e a conversa acontece no aplicativo, sob a política de privacidade do WhatsApp. Usamos o que você nos manda só para responder e preparar o diagnóstico.
+- **Para que usamos.** Responder o seu contato, marcar e preparar a conversa, e manter o site seguro. Não vendemos nem compartilhamos seus dados para publicidade.
+- **Com quem compartilhamos.** Só com os serviços que fazem o site funcionar: hospedagem [Vercel, a confirmar na fase 5] e agendamento (Cal.com). Esses serviços podem guardar dados fora do Brasil e de Portugal.
+- **Base legal.** Seu consentimento ao nos procurar e o nosso interesse legítimo em manter o site seguro (LGPD art. 7; RGPD art. 6).
+- **Por quanto tempo.** Enquanto durar a conversa comercial ou o contrato e, depois, pelo prazo que a lei exigir.
+- **Seus direitos.** Você pode pedir acesso, correção, exclusão ou cópia dos seus dados e retirar o consentimento a qualquer momento, pelo e-mail brandforge.contato@gmail.com. No Brasil, também pode reclamar à ANPD; em Portugal, à CNPD.
+- **Cookies.** a preencher na fase 5 (se não houver analytics com cookies: "O site não usa cookies de rastreamento.")
+
+### Página 404 — aprovada em 2026-09-29
+- Título: Essa peça não está aqui.
+- Texto: O endereço pode ter mudado ou o link está incompleto.
+- Botões: Voltar ao início · Quero meu diagnóstico
+
+### Open Graph (compartilhamento no WhatsApp e redes) — aprovada em 2026-09-29
+- Título: BrandForge | IA sob medida para o seu negócio
+- Descrição: Mais clientes e menos trabalho manual, com IA feita sob medida. Comece por um diagnóstico grátis pelo WhatsApp.
+- Imagem (1200×630): wordmark BrandForge em marfim com a linha dourada, sobre obsidiana, com o círculo da abertura em ouro à direita
+- Alt da imagem: Logotipo da BrandForge em fundo escuro com um círculo dourado
+
+### Formulário
+- Não há formulário no site (decisão da fase 1).
+
+## Revisão final — 2026-09-29
+- "Ajustes" limitado a "pequenos ajustes"; mudanças maiores em proposta à parte com preço fechado (CDC art. 30)
+- Dado da KPMG sem o rótulo "opcional" (aprovado com o dado)
+- Português do Brasil mantido também para o público de Portugal (decisão de Filipe)
+
+## A preencher com o cliente
+- Portfólio: nome, endereço público e uma linha do projeto da imobiliária
+- Link do Cal.com (CTA final) e confirmação de que o horário 9h às 18h é o de Brasília
+- Razão social e CNPJ (privacidade; rodapé, opcional)
+- Curso de IA: formato e duração (opcional)
+- Privacidade: hospedagem e cookies (fase 5); revisão por advogado (antes da fase 9)
