@@ -4,8 +4,8 @@
 
 ## Agora
 
-- **Fase atual:** 4 — Copy (não iniciada)
-- **Próximo passo:** abrir a fase 4: montar a estrutura de páginas e seções da direção A (hero, escada de ofertas, como funciona, portfólio, objeções, CTA) e escrever a copy a partir de `projeto/referencias/posicionamento.md`; conferir antes o dado da KPMG
+- **Fase atual:** 4 — Copy (em andamento)
+- **Próximo passo:** fase 4: home aprovada inteira; escrever as páginas de serviço (`/sites`, `/atendimento-ia`, `/sob-medida`), depois `/privacidade`, 404, Open Graph e a revisão final
 - **Modelo recomendado:** Opus
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -17,7 +17,7 @@
 | 1 | Briefing | concluída | `projeto/BRIEF.md` |
 | 2 | Nicho regulado | concluída | `projeto/BRIEF.md` §2 |
 | 3 | Direção criativa | concluída | `projeto/DIRECAO.md` |
-| 4 | Copy | não iniciada | `projeto/COPY.md` |
+| 4 | Copy | em andamento | `projeto/COPY.md` |
 | 5 | Stack | não iniciada | seção "Stack" abaixo |
 | 6 | Construção | não iniciada | código em `app/`, `components/`, `lib/` |
 | 7 | Revisão | não iniciada | `projeto/REVISAO.md` |
@@ -50,6 +50,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Fase 3, conceito central: "A forja": forjar peça por peça; o site mostra a matéria bruta (o problema do negócio) virando uma peça sob medida. Vem do nome e da assinatura "IA sob medida" (aprovado por Filipe)
 - 2026-09-29 — Fase 3, referência fora do nicho: relojoaria e cutelaria artesanal (precisão visível, ritmo lento, material como protagonista) (escolha de Filipe)
 - 2026-09-29 — Direção A "Manufatura" aprovada, sem ajustes: paleta escura da identidade (obsidiana, marfim, areia, ouro claro, bronze), Playfair Display + Inter, raio 4 px, grão fixo, colunas 7/4 com texto à esquerda, assinatura "a abertura" (vídeo num círculo que se abre em tela cheia com a rolagem). B e C descartadas; detalhes em `projeto/DIRECAO.md` (aprovado por Filipe)
+- 2026-09-29 — Fase 4, mapa: 5 páginas. Home (hero · matéria bruta · mecanismo por dentro · escada de ofertas · como funciona · compromissos por escrito · portfólio · perguntas · curso à parte · CTA final/rodapé), `/sites`, `/atendimento-ia`, `/sob-medida`, `/privacidade`. Sem página própria de portfólio; "Compromissos" no lugar de prova social (aprovado por Filipe)
+- 2026-09-29 — Fase 4, estilo: tom direto, próximo e preciso; sem travessão no texto do site; CTA único "Quero meu diagnóstico" (menu, hero, rodapé), botões de serviço "Falar sobre <serviço>" (aprovado por Filipe)
 
 ## Stack (fase 5)
 
@@ -69,9 +71,11 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - [ ] Pedir os originais das imagens enviadas pelo WhatsApp (vieram comprimidas) — **quem:** Filipe — desde 2026-09-29
 
 - [ ] Confirmar com advogado o link para o Rapé Xingu no portfólio (Lei 9.294/1996, RDC Anvisa 15/2003) antes da fase 9 — **quem:** Filipe — desde 2026-09-29
+- [ ] Sites de demonstração do portfólio mostram dados que parecem reais: Memphis Burger (endereço CLSW 104 Bloco C loja 15, "desde 2021", preços) e Rapé Xingu (preços R$22 a R$25). Avaliar aviso "projeto conceitual" nos próprios sites; preços do Rapé entram na consulta ao advogado — **quem:** Filipe — desde 2026-09-29
+- [ ] Link do Cal.com para o CTA final; confirmar que o horário de atendimento (9h às 18h) é o de Brasília — **quem:** Filipe — desde 2026-09-29
 - [ ] Política de privacidade (Cal.com + eventual analytics; LGPD/RGPD) — **quem:** nós, fases 4 e 6 — desde 2026-09-29
 
-- [ ] Dado da KPMG (45% com IA desconectada): a busca atribui ao "KPMG Global Tech Report 2026" (45% dos executivos no Brasil dizem que as iniciativas de IA funcionam de forma desconectada, sem plataforma integrada), mas a página oficial ainda não foi aberta. A página "Execução: o desafio dos negócios na era da IA" (kpmg.com/br, set/2026) foi aberta e NÃO traz o número. Abrir o relatório antes de usar na copy; sem confirmação, o dado não entra — **quem:** nós, fase 4 — desde 2026-09-29
+- [x] Dado da KPMG conferido em 2026-09-29 na página oficial https://kpmg.com/co/es/tendencias/2026/05/global-tech-report-2026.html (KPMG Global Tech Report 2026, recorte América do Sul): "la investigación contó con la participación de 150 líderes, todos de Brasil" e "El 45% informó de proyectos de IA que estaban desconectados entre sí". Na copy: "45% dos 150 líderes brasileiros ouvidos pela KPMG relatam projetos de IA desconectados entre si (Global Tech Report 2026)", com link. Atenção: amostra de líderes de empresas, não de pequenos negócios; não generalizar para "pequenos negócios"
 
 ## Provisórios a trocar antes de publicar
 
