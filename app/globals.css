@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Tokens de cor, fonte e movimento entram aqui na fase 6, a partir de projeto/DIRECAO.md:
+   @theme { --color-...: ...; }  e  @theme inline { --font-display: var(--font-...-next); }
+   Tailwind v4: não existe tailwind.config.js, os tokens vivem neste arquivo. */
+
+/* Rede de segurança para animações e transições CSS. GSAP e Motion têm tratamento próprio
+   (skill stack-web). Não use scroll-behavior: smooth no html: quebra o ScrollTrigger. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
