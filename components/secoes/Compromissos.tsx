@@ -13,7 +13,7 @@ export function Compromissos() {
   return (
     <Secao rotulo="compromissos-titulo">
       <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-        <div className="lg:col-span-4">
+        <div data-revelar className="lg:col-span-4">
           <h2 id="compromissos-titulo" className="text-h3 lg:text-h2">
             O que fica por escrito
           </h2>
@@ -21,7 +21,7 @@ export function Compromissos() {
             Em vez de promessa bonita, compromisso que você pode cobrar. Tudo isso entra na proposta.
           </p>
         </div>
-        <dl className="mt-10 border-t border-filete lg:col-span-7 lg:col-start-6 lg:mt-0">
+        <dl data-revelar-grupo className="mt-10 border-t border-filete lg:col-span-7 lg:col-start-6 lg:mt-0">
           {compromissos.map((c) => (
             <div key={c.nome} className="grid gap-1 border-b border-filete py-5 md:grid-cols-[14rem_1fr] md:gap-6">
               <dt className="font-medium text-ouro">{c.nome}</dt>

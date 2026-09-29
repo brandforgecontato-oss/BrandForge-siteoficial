@@ -7,7 +7,7 @@ export function CtaFinal() {
   return (
     <Secao rotulo="cta-final-titulo">
       <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-        <div className="lg:col-span-7">
+        <div data-revelar className="lg:col-span-7">
           <h2 id="cta-final-titulo" className="text-h2 lg:text-h1">
             Comece pela medida.
           </h2>

@@ -23,7 +23,7 @@ export function Portfolio() {
   return (
     <Secao id="portfolio" rotulo="portfolio-titulo">
       <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-        <div className="lg:col-span-7">
+        <div data-revelar className="lg:col-span-7">
           <h2 id="portfolio-titulo" className="text-h3 lg:text-h2">
             Peças de mostruário
           </h2>
@@ -34,7 +34,7 @@ export function Portfolio() {
         </div>
       </div>
 
-      <ul className="mt-14 grid gap-6 lg:grid-cols-12">
+      <ul data-revelar-grupo className="mt-14 grid gap-6 lg:grid-cols-12">
         {projetos.map((p) => (
           <li
             key={p.nome}

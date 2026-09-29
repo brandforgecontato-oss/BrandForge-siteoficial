@@ -64,7 +64,7 @@ export function Ofertas() {
   return (
     <Secao id="servicos" rotulo="ofertas-titulo">
       <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-        <div className="lg:col-span-7">
+        <div data-revelar className="lg:col-span-7">
           <h2 id="ofertas-titulo" className="text-h3 lg:text-h2">
             Uma peça de cada vez, na ordem que o seu negócio precisa
           </h2>
@@ -74,7 +74,7 @@ export function Ofertas() {
         </div>
       </div>
 
-      <ol className="mt-14 space-y-6">
+      <ol data-revelar-grupo className="mt-14 space-y-6">
         {pecas.map((p) => (
           <li key={p.numero} className="rounded-peca border border-filete bg-obsidiana-alta p-6 md:p-10 lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-5">

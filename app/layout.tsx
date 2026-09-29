@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { ProvidersMovimento } from "./providers-movimento";
 import { Analytics } from "@vercel/analytics/next";
 import { Cabecalho } from "@/components/layout/Cabecalho";
 import { CtaFixoCelular } from "@/components/layout/CtaFixoCelular";
@@ -40,9 +41,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body>
         <Entrada />
-        <Cabecalho />
-        {children}
-        <Rodape />
+        <ProvidersMovimento>
+          <Cabecalho />
+          {children}
+          <Rodape />
+        </ProvidersMovimento>
         <CtaFixoCelular />
         <div aria-hidden="true" className="grao" />
         <JsonLdNegocio />

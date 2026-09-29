@@ -3,7 +3,7 @@ import { linkWhatsApp } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-titulo" className="pb-secao-cel pt-32 lg:pb-secao lg:pt-44">
+    <section id="hero" aria-labelledby="hero-titulo" className="pb-secao-cel pt-32 lg:pb-secao lg:pt-44">
       <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-5 md:px-10 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7">
           <h1 id="hero-titulo" className="max-w-[19ch] text-h1-cel lg:text-h1">
@@ -53,7 +53,7 @@ export function Hero() {
 function Marcas() {
   const marcas = Array.from({ length: 60 }, (_, i) => i);
   return (
-    <svg aria-hidden="true" viewBox="0 0 200 200" className="absolute inset-0 size-full">
+    <svg data-bisel aria-hidden="true" viewBox="0 0 200 200" className="absolute inset-0 size-full">
       <circle cx="100" cy="100" r="99" fill="none" stroke="var(--color-filete)" strokeWidth="0.4" />
       {marcas.map((i) => {
         const maior = i % 5 === 0;

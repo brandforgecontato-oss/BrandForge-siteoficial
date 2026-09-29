@@ -37,10 +37,10 @@ export function Perguntas({ id = "perguntas", titulo = "Perguntas que a gente se
     <Secao id={id} rotulo={`${id}-titulo`}>
       <div className="lg:grid lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7">
-          <h2 id={`${id}-titulo`} className="text-h3 lg:text-h2">
+          <h2 data-revelar id={`${id}-titulo`} className="text-h3 lg:text-h2">
             {titulo}
           </h2>
-          <div className="mt-10 border-t border-filete">
+          <div data-revelar-grupo className="mt-10 border-t border-filete">
             {itens.map((item) => (
               <details key={item.pergunta} className="group border-b border-filete">
                 <summary className="flex min-h-14 cursor-pointer items-center justify-between gap-6 py-4 text-destaque text-marfim">

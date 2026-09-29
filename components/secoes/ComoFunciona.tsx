@@ -28,27 +28,32 @@ export function ComoFunciona() {
     <Secao id="como-funciona" rotulo="como-titulo">
       <div className="lg:grid lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7">
-          <h2 id="como-titulo" className="text-h3 lg:text-h2">
+          <h2 data-revelar id="como-titulo" className="text-h3 lg:text-h2">
             Do primeiro contato ao relatório do mês
           </h2>
 
           {/* Linha do tempo vertical: é sequência real */}
-          <ol className="mt-12 border-l border-filete">
-            {passos.map((p, i) => (
-              <li key={p.titulo} className="relative pb-10 pl-8 last:pb-0">
-                <span aria-hidden="true" className="absolute -left-[5px] top-2 size-[9px] rounded-full bg-ouro" />
-                <h3 className="text-destaque">
-                  <span className="mr-2 text-ouro">{i + 1}.</span>
-                  {p.titulo}
-                </h3>
-                <p className="mt-2 text-areia">{p.texto}</p>
-              </li>
-            ))}
-          </ol>
+          <div className="relative mt-12">
+            <span data-linha aria-hidden="true" className="absolute bottom-0 left-0 top-0 w-px bg-ouro" />
+            <ol data-revelar-grupo className="border-l border-filete">
+              {passos.map((p, i) => (
+                <li key={p.titulo} className="relative pb-10 pl-8 last:pb-0">
+                  <span aria-hidden="true" className="absolute -left-[5px] top-2 size-[9px] rounded-full bg-ouro" />
+                  <h3 className="text-destaque">
+                    <span className="mr-2 text-ouro">{i + 1}.</span>
+                    {p.titulo}
+                  </h3>
+                  <p className="mt-2 text-areia">{p.texto}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
 
-          <Botao href={linkWhatsApp("diagnostico")} externo className="mt-12">
-            Quero meu diagnóstico
-          </Botao>
+          <div data-revelar className="mt-12">
+            <Botao href={linkWhatsApp("diagnostico")} externo>
+              Quero meu diagnóstico
+            </Botao>
+          </div>
         </div>
       </div>
     </Secao>

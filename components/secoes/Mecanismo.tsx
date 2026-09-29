@@ -1,23 +1,26 @@
 // O mecanismo por dentro: o vídeo da abertura vira fundo em tela cheia.
 export function Mecanismo() {
   return (
-    <section aria-labelledby="mecanismo-titulo" className="relative isolate overflow-hidden">
-      <video
-        className="absolute inset-0 -z-20 size-full object-cover"
-        src="/midia/abertura.mp4"
-        poster="/midia/abertura-poster.webp"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-      />
-      {/* Escurecimento para manter o texto em contraste AA sobre o vídeo */}
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-obsidiana via-obsidiana/85 to-obsidiana/50" />
+    <section data-mecanismo aria-labelledby="mecanismo-titulo" className="relative isolate overflow-hidden bg-obsidiana">
+      {/* A abertura: com movimento, este fundo nasce num círculo e se abre até a tela cheia */}
+      <div data-mecanismo-fundo className="absolute inset-0 -z-10">
+        <video
+          className="absolute inset-0 size-full object-cover [filter:sepia(0.45)_saturate(0.85)_brightness(0.95)]"
+          src="/midia/abertura.mp4"
+          poster="/midia/abertura-poster.webp"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+        />
+        {/* Escurecimento para manter o texto em contraste AA sobre o vídeo */}
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-obsidiana via-obsidiana/85 to-obsidiana/50" />
+      </div>
 
       <div className="mx-auto flex min-h-svh max-w-[1200px] items-center px-5 py-secao-cel md:px-10 lg:py-secao">
-        <div className="max-w-[40rem]">
+        <div data-mecanismo-texto className="max-w-[40rem]">
           <h2 id="mecanismo-titulo" className="text-h3 lg:text-h2">
             Primeiro a gente mede. Depois constrói.
           </h2>
