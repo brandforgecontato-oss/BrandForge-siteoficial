@@ -1,11 +1,11 @@
-# Estado do projeto — BrandForge
+﻿# Estado do projeto — BrandForge
 
 > Lido pelo `/comecar` no início de toda sessão. Atualizado no fim de cada fase (e sempre que uma decisão for aprovada). É o que permite `/clear`, fechar o VS Code ou passar o projeto para outra pessoa e retomar exatamente daqui.
 
 ## Agora
 
-- **Fase atual:** 5 — Stack (não iniciada)
-- **Próximo passo:** abrir a fase 5: decidir as camadas da stack (movimento para "a abertura": GSAP + ScrollTrigger; Lenis ou não; vídeo), hospedagem (Vercel), analytics com ou sem cookies e o embed do Cal.com com `seguranca-web`
+- **Fase atual:** 6 — Construção (não iniciada)
+- **Próximo passo:** abrir a fase 6: copiar a mídia de `site-BrandForge/imagens-videos` para `public/` (comprimir vídeo, gerar pôster), montar tokens da direção A (cores, Playfair + Inter via `next/font`, grão) e construir as seções da home sem animação, conferindo 375/1440
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -18,7 +18,7 @@
 | 2 | Nicho regulado | concluída | `projeto/BRIEF.md` §2 |
 | 3 | Direção criativa | concluída | `projeto/DIRECAO.md` |
 | 4 | Copy | concluída | `projeto/COPY.md` |
-| 5 | Stack | não iniciada | seção "Stack" abaixo |
+| 5 | Stack | concluída | seção "Stack" abaixo |
 | 6 | Construção | não iniciada | código em `app/`, `components/`, `lib/` |
 | 7 | Revisão | não iniciada | `projeto/REVISAO.md` |
 | 8 | Preview e feedback | não iniciada | `projeto/FEEDBACK.md` |
@@ -53,10 +53,21 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Fase 4, mapa: 5 páginas. Home (hero · matéria bruta · mecanismo por dentro · escada de ofertas · como funciona · compromissos por escrito · portfólio · perguntas · curso à parte · CTA final/rodapé), `/sites`, `/atendimento-ia`, `/sob-medida`, `/privacidade`. Sem página própria de portfólio; "Compromissos" no lugar de prova social (aprovado por Filipe)
 - 2026-09-29 — Fase 4, estilo: tom direto, próximo e preciso; sem travessão no texto do site; CTA único "Quero meu diagnóstico" (menu, hero, rodapé), botões de serviço "Falar sobre <serviço>" (aprovado por Filipe)
 - 2026-09-29 — Fase 4: copy aprovada inteira em `projeto/COPY.md` (home, `/sites`, `/atendimento-ia`, `/sob-medida`, `/privacidade` como rascunho, 404, Open Graph, navegação, rodapé). Dado da KPMG entra com fonte; "pequenos ajustes" na mensalidade, mudanças maiores em proposta à parte; português do Brasil também para Portugal. Aprovações confirmam: entregam logo, a IA oferece horário, o relatório mede tempo de resposta e conversas que viraram venda (aprovado por Filipe)
+- 2026-09-29 — Fase 5, stack: Next.js 16 + TS + Tailwind v4 na Vercel; GSAP + ScrollTrigger só na abertura e nas entradas das seções; Lenis (desligado com movimento reduzido); sem SplitText, Motion, 3D, View Transitions, Rive, Lottie; vídeo nativo com pôster; Cal.com como link externo sem embed; Vercel Web Analytics sem cookies; cabeçalhos de segurança no `next.config` (aprovado por Filipe)
 
 ## Stack (fase 5)
 
-- Base: Next.js + TypeScript + Tailwind (template)
+- Base: Next.js 16.3.6 + TypeScript + Tailwind v4, deploy na Vercel
+- GSAP 3.15.0 + ScrollTrigger (+ @gsap/react 2.1.2): sim, só na "abertura" (pin + scrub do círculo do hero até tela cheia) e nas entradas das seções. Movimento reduzido: imagem parada em tela cheia
+- Lenis 1.3.26: sim, porque há scrub e a direção pede movimento com massa; desligado com `prefers-reduced-motion`
+- SplitText: não (H1 é o LCP)
+- Motion: não (desinstalado); acordeão com `<details>` + CSS, menu do celular com CSS
+- 3D, View Transitions, Rive, Lottie: não
+- Vídeo: `<video>` nativo muted/loop/playsinline, `aria-hidden`, pôster em imagem, MP4 comprimido, `preload="metadata"`
+- Cal.com: link externo em nova aba (`rel="noopener noreferrer"`), sem embed nem script de terceiro
+- WhatsApp: links `wa.me` com mensagem pronta por serviço
+- Analytics: @vercel/analytics 2.0.1 (Vercel Web Analytics, sem cookies); privacidade: "O site não usa cookies de rastreamento."
+- Segurança: sem formulário, login, pagamento nem segredo; cabeçalhos no `next.config` (CSP, HSTS, X-Content-Type-Options, Referrer-Policy, frame-ancestors)
 
 ## Construção (fase 6)
 
@@ -88,6 +99,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 
 ## Diário curto
 
+- 2026-09-29 — Fase 5: stack aprovada sem ajustes; `motion` desinstalado, `@vercel/analytics` 2.0.1 instalado; `npm run verificar` passou.
 - 2026-09-29 — Fase 4: KPMG conferido na página oficial; mapa de 5 páginas; copy escrita e aprovada seção por seção; revisão final com 2 correções. Imobiliária, Cal.com, CNPJ e formato do curso ficam a preencher.
 
 - 2026-09-29 — Fase 3: portfólio do template vazio (primeiro site). Conceito "A forja", referência relojoaria/cutelaria, três direções com pranchas fotografadas via Playwright (Node) em 1440/375; escolhida A (Manufatura). Pranchas apagadas; screenshots em `projeto/referencias/direcoes/`.

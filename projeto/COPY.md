@@ -254,11 +254,11 @@ Preenchido na fase 4, seção por seção. Cada seção só passa a "aprovada" c
   - nome, e-mail e o que você escrever ao agendar uma conversa pelo Cal.com.
 - **WhatsApp.** Ao tocar num botão de WhatsApp, você sai do site e a conversa acontece no aplicativo, sob a política de privacidade do WhatsApp. Usamos o que você nos manda só para responder e preparar o diagnóstico.
 - **Para que usamos.** Responder o seu contato, marcar e preparar a conversa, e manter o site seguro. Não vendemos nem compartilhamos seus dados para publicidade.
-- **Com quem compartilhamos.** Só com os serviços que fazem o site funcionar: hospedagem [Vercel, a confirmar na fase 5] e agendamento (Cal.com). Esses serviços podem guardar dados fora do Brasil e de Portugal.
+- **Com quem compartilhamos.** Só com os serviços que fazem o site funcionar: hospedagem e medição de visitas (Vercel) e agendamento (Cal.com). Esses serviços podem guardar dados fora do Brasil e de Portugal.
 - **Base legal.** Seu consentimento ao nos procurar e o nosso interesse legítimo em manter o site seguro (LGPD art. 7; RGPD art. 6).
 - **Por quanto tempo.** Enquanto durar a conversa comercial ou o contrato e, depois, pelo prazo que a lei exigir.
 - **Seus direitos.** Você pode pedir acesso, correção, exclusão ou cópia dos seus dados e retirar o consentimento a qualquer momento, pelo e-mail brandforge.contato@gmail.com. No Brasil, também pode reclamar à ANPD; em Portugal, à CNPD.
-- **Cookies.** a preencher na fase 5 (se não houver analytics com cookies: "O site não usa cookies de rastreamento.")
+- **Cookies.** O site não usa cookies de rastreamento. Contamos as visitas de forma agregada, sem identificar você, pelo Vercel Web Analytics.
 
 ### Página 404 — aprovada em 2026-09-29
 - Título: Essa peça não está aqui.
