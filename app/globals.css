@@ -50,6 +50,12 @@
     color-scheme: dark;
   }
 
+  a,
+  button,
+  summary {
+    touch-action: manipulation;
+  }
+
   body {
     background-color: var(--color-obsidiana);
     color: var(--color-marfim);

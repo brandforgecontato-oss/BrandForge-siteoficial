@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { ProvidersMovimento } from "./providers-movimento";
 import { Analytics } from "@vercel/analytics/next";
@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   },
   robots: siteIndexavel() ? { index: true, follow: true } : { index: false, follow: false },
 };
+
+export const viewport: Viewport = { themeColor: "#17140f", colorScheme: "dark" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

@@ -25,16 +25,18 @@ export function MateriaBruta() {
 
         {/* Apoio visual: a torre de peças encaixadas, a matéria virando estrutura */}
         <div className="lg:col-span-4 lg:col-start-9 lg:row-span-2 lg:row-start-1">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-peca border border-filete lg:sticky lg:top-28 lg:aspect-[3/4]">
-            <Image
-              src={torre}
-              alt=""
-              fill
-              data-paralaxe
-              sizes="(min-width: 1024px) 380px, 100vw"
-              className="object-cover object-[50%_30%] [filter:sepia(0.2)]"
-            />
-            <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_40%,rgb(23_20_15/0.75)_100%)]" />
+          <div className="lg:sticky lg:top-28">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-peca border border-filete lg:aspect-[3/4]">
+              <Image
+                src={torre}
+                alt=""
+                fill
+                data-paralaxe
+                sizes="(min-width: 1024px) 380px, 100vw"
+                className="object-cover object-[50%_30%] [filter:sepia(0.2)]"
+              />
+              <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_40%,rgb(23_20_15/0.75)_100%)]" />
+            </div>
           </div>
         </div>
 

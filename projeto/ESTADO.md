@@ -4,8 +4,8 @@
 
 ## Agora
 
-- **Fase atual:** 7 — Revisão (não iniciada)
-- **Próximo passo:** abrir a fase 7: checagens automáticas (imagens, scroll horizontal, H1, alt, console, alvos de toque, teclado, movimento reduzido, sem JS) em 375/768/1920 e Lighthouse com o build de produção (pedir autorização antes do `npx lighthouse`), resultado em `projeto/REVISAO.md`
+- **Fase atual:** 8 — Preview e feedback (não iniciada)
+- **Próximo passo:** abrir a fase 8: publicar um preview na Vercel (pedir ok antes) e colher o feedback de Filipe; medir o mobile no PageSpeed Insights com a URL do preview
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-30 por BrandForge
 
@@ -20,7 +20,7 @@
 | 4 | Copy | concluída | `projeto/COPY.md` |
 | 5 | Stack | concluída | seção "Stack" abaixo |
 | 6 | Construção | concluída | código em `app/`, `components/`, `lib/` |
-| 7 | Revisão | não iniciada | `projeto/REVISAO.md` |
+| 7 | Revisão | concluída | `projeto/REVISAO.md` |
 | 8 | Preview e feedback | não iniciada | `projeto/FEEDBACK.md` |
 | 9 | Lançamento | não iniciada | seção "Lançamento" abaixo |
 | 10 | Portfólio | não iniciada | commit no portfólio do template |
@@ -110,6 +110,9 @@ Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo c
 
 ## Pendências
 
+- [ ] Lighthouse mobile 76 com a entrada em vídeo (86 sem ela; desktop 99): decidir se aceita ou encurta a entrada; conferir no PageSpeed Insights com o preview — **quem:** Filipe — desde 2026-09-30
+- [ ] Cantos pretos dentro do círculo do vídeo do hero em telas de 1920 — **quem:** Filipe/nós — desde 2026-09-30
+
 - [ ] Enviar o monograma "BF" em vetor (SVG): hoje o ícone (`app/icon.png`, `app/apple-icon.png`) foi extraído do último quadro do vídeo (provisório, nítido em tamanho de ícone) — **quem:** Filipe — desde 2026-09-30
 
 - [ ] O vídeo `abertura.mp4` tem texto sem sentido gerado por IA na interface que aparece a partir de ~2 s ("Seamlium", "Premium Sistema sistems", "UAIN NOW"); na entrada em tela cheia fica visível. Regenerar o vídeo sem texto, ou usar o outro vídeo (`BrandForge_website_hero_section…115240.mp4`) se for limpo — **quem:** Filipe/nós — desde 2026-09-29
@@ -143,6 +146,8 @@ Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo c
 - Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
 
 ## Diário curto
+
+- 2026-09-30 — Fase 7 concluída: build, checagens no navegador (375/768/1920), teclado, sem JS, movimento reduzido, segurança e Lighthouse (desktop 99, mobile 76). Corrigidos: vídeos em loop com movimento reduzido, vídeo do mecanismo baixado na carga, aviso do next/image, theme-color, touch-action, aria-hidden. Detalhes em `projeto/REVISAO.md`.
 
 - 2026-09-30 — Fase 6 concluída: todas as seções e páginas aprovadas; etapa C (Open Graph, ícones BF, JSON-LD) feita; `npm run verificar` passou.
 

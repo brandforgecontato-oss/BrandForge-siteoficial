@@ -70,7 +70,7 @@ function Mostrador() {
   const marcas = Array.from({ length: 48 }, (_, i) => i);
   return (
     <div data-mostrador aria-hidden="true" className="invisible sticky top-[30vh] mx-auto aspect-square w-full max-w-[300px]">
-      <svg viewBox="0 0 200 200" className="absolute inset-0 size-full">
+      <svg aria-hidden="true" viewBox="0 0 200 200" className="absolute inset-0 size-full">
         {marcas.map((i) => (
           <line
             key={i}

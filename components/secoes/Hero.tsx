@@ -1,5 +1,6 @@
 import { Botao } from "@/components/ui/Botao";
 import { Marcas } from "@/components/ui/Marcas";
+import { VideoAmbiente } from "@/components/VideoAmbiente";
 import { linkWhatsApp } from "@/lib/site";
 
 export function Hero() {
@@ -26,7 +27,7 @@ export function Hero() {
           <div className="relative aspect-square w-[78%] lg:w-full lg:max-w-[460px]">
             <Marcas />
             <div data-abertura className="absolute inset-[7%] overflow-hidden rounded-full border border-ouro/30">
-              <video
+              <VideoAmbiente
                 className="absolute inset-0 size-full scale-110 object-cover [filter:sepia(0.45)_saturate(0.85)_brightness(0.95)]"
               src="/midia/abertura.mp4"
               poster="/midia/abertura-poster.webp"

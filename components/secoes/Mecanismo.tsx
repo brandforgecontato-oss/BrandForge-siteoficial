@@ -1,10 +1,13 @@
 // O mecanismo por dentro: a torre de circuitos que acende e se conecta aos painéis, em tela cheia.
+import { VideoAmbiente } from "@/components/VideoAmbiente";
+
 export function Mecanismo() {
   return (
     <section data-mecanismo aria-labelledby="mecanismo-titulo" className="relative isolate overflow-hidden bg-obsidiana">
       {/* A abertura: com movimento, este fundo nasce num círculo e se abre até a tela cheia */}
       <div data-mecanismo-fundo className="absolute inset-0 -z-10">
-        <video
+        <VideoAmbiente
+          carregarPerto
           className="absolute inset-0 size-full object-cover object-[65%_50%] [filter:sepia(0.15)]"
           src="/midia/mecanismo.mp4"
           poster="/midia/mecanismo-poster.webp"
