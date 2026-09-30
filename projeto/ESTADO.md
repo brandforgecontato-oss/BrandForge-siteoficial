@@ -92,7 +92,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Escada de ofertas (cartas que se empilham no desktop) | ok | aprovada | sticky + recuo da peça de trás |
 | Como funciona (mostrador no desktop) | ok | aprovada | linha em ouro, passo aceso, mostrador com arco |
 | Compromissos (ficha em painel) | ok | 375/1440 ok, aguardando ok de Filipe | traços dourados que se desenham |
-| Portfólio | ok (sem imobiliária, sem capturas) | — | — |
+| Portfólio (capturas reais em moldura; sem imobiliária) | ok | 1440/375 ok, aguardando ok de Filipe | entrada + zoom leve no hover |
 | Perguntas | ok | — | — |
 | Curso à parte | ok | — | — |
 | CTA final (peça forjada; Cal.com oculto até ter link) | ok | aprovada | entrada + peça girando |
@@ -106,7 +106,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - [ ] O vídeo `abertura.mp4` tem texto sem sentido gerado por IA na interface que aparece a partir de ~2 s ("Seamlium", "Premium Sistema sistems", "UAIN NOW"); na entrada em tela cheia fica visível. Regenerar o vídeo sem texto, ou usar o outro vídeo (`BrandForge_website_hero_section…115240.mp4`) se for limpo — **quem:** Filipe/nós — desde 2026-09-29
 
 - [ ] Comprimir `public/midia/abertura.mp4` (1280×720, 10 s, 3 MB) e `mecanismo.mp4` (1280×720, 10 s, 3,5 MB): não há ffmpeg na máquina; instalar só com ok de Filipe — **quem:** nós — desde 2026-09-29
-- [ ] Capturas de tela reais do Memphis Burger e do Rapé Xingu para o portfólio (etapa B) — **quem:** nós — desde 2026-09-29
+- [x] Capturas reais do Memphis Burger e do Rapé Xingu (1440×900, página inicial; Rapé depois da confirmação de idade) em `public/midia/projeto-*.webp` (2026-09-30). A do Rapé mostra selos "100% ervas naturais / origem indígena" do próprio site: levar à consulta do advogado junto com o link
 
 - [ ] Abrir a pasta `template_sites-main` como pasta do VS Code (hoje está aberta a pasta de cima, `site-BrandForge`); sem isso o Claude Code não carrega `CLAUDE.md`, as skills do projeto nem o Playwright MCP do `.mcp.json` — **quem:** nós — desde 2026-09-29
 - [ ] Conferir o Playwright MCP ativo (abrir `about:blank` + screenshot) depois de reabrir na pasta certa — **quem:** nós — desde 2026-09-29
