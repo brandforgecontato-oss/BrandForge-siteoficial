@@ -64,6 +64,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-30 — Entrada: o vídeo toca inteiro (10 s) e termina no próprio logo do vídeo (monograma BF + "Seu próximo sistema começa aqui."), parado 2 s, e só então se fecha no círculo do hero; sem wordmark sobreposto. Tempo-limite de 16 s se o vídeo não carregar (pedido de Filipe)
 - 2026-09-30 — "O mecanismo por dentro" usa um vídeo próprio: `Animação_para_Hero_Section_Brand…_20260930114223.mp4` → `public/midia/mecanismo.mp4` (torre de circuitos que acende e se conecta a painéis; sem texto legível). O véu escuro entra só junto com o texto (pedido de Filipe)
 - 2026-09-30 — Imagem `brandforge-Forja.png` entra no CTA final como a "peça forjada" (recorte `public/midia/forja.webp`, sem o texto gravado "The Forge / Forjamos a tecnologia que move o futuro."), fundida ao fundo e girando devagar com a rolagem (pedido de Filipe; posição escolhida por nós)
+- 2026-09-30 — "Como funciona" (mostrador) e CTA final (peça forjada) aprovados ("ótimo", "perfeito") (aprovado por Filipe)
 
 ## Stack (fase 5)
 
@@ -89,12 +90,12 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | A matéria bruta (imagem da torre) | ok | aprovada | entrada + paralaxe |
 | O mecanismo por dentro | ok | aprovada (movimento aprovado: "ótimo") | a abertura (pin + scrub) |
 | Escada de ofertas (cartas que se empilham no desktop) | ok | aprovada | sticky + recuo da peça de trás |
-| Como funciona (mostrador no desktop) | ok | 1440 ok, aguardando ok de Filipe | linha em ouro, passo aceso, mostrador com arco |
-| Compromissos | ok | — | — |
+| Como funciona (mostrador no desktop) | ok | aprovada | linha em ouro, passo aceso, mostrador com arco |
+| Compromissos (ficha em painel) | ok | 375/1440 ok, aguardando ok de Filipe | traços dourados que se desenham |
 | Portfólio | ok (sem imobiliária, sem capturas) | — | — |
 | Perguntas | ok | — | — |
 | Curso à parte | ok | — | — |
-| CTA final (peça forjada; Cal.com oculto até ter link) | ok | 375/1440 ok, aguardando ok de Filipe | entrada + peça girando |
+| CTA final (peça forjada; Cal.com oculto até ter link) | ok | aprovada | entrada + peça girando |
 | Rodapé + CTA fixo no celular | ok | — | — |
 | /sites, /atendimento-ia, /sob-medida, /privacidade, 404 | — | — | — |
 

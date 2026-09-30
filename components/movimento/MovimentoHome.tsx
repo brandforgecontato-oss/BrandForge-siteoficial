@@ -146,6 +146,21 @@ export function MovimentoHome() {
         );
       });
 
+      // Compromissos: o traço dourado de cada linha se desenha quando ela aparece
+      gsap.utils.toArray<HTMLElement>("[data-traco]").forEach((linha, i) => {
+        gsap.fromTo(
+          linha,
+          { "--traco": 0 },
+          {
+            "--traco": 1,
+            duration: 1.2,
+            delay: 0.25 + i * 0.08,
+            ease: "power2.inOut",
+            scrollTrigger: { trigger: linha, start: "top 88%", once: true },
+          },
+        );
+      });
+
       // Entradas: um gatilho por elemento, cada um na sua vez
       gsap.utils.toArray<HTMLElement>("[data-revelar]").forEach((el) => {
         gsap.from(el, {
