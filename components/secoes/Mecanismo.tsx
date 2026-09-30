@@ -1,13 +1,13 @@
-// O mecanismo por dentro: o vídeo da abertura vira fundo em tela cheia.
+// O mecanismo por dentro: a torre de circuitos que acende e se conecta aos painéis, em tela cheia.
 export function Mecanismo() {
   return (
     <section data-mecanismo aria-labelledby="mecanismo-titulo" className="relative isolate overflow-hidden bg-obsidiana">
       {/* A abertura: com movimento, este fundo nasce num círculo e se abre até a tela cheia */}
       <div data-mecanismo-fundo className="absolute inset-0 -z-10">
         <video
-          className="absolute inset-0 size-full object-cover [filter:sepia(0.45)_saturate(0.85)_brightness(0.95)]"
-          src="/midia/abertura.mp4"
-          poster="/midia/abertura-poster.webp"
+          className="absolute inset-0 size-full object-cover object-[65%_50%] [filter:sepia(0.15)]"
+          src="/midia/mecanismo.mp4"
+          poster="/midia/mecanismo-poster.webp"
           autoPlay
           muted
           loop
@@ -16,7 +16,7 @@ export function Mecanismo() {
           aria-hidden="true"
         />
         {/* Escurecimento para manter o texto em contraste AA sobre o vídeo */}
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-obsidiana via-obsidiana/85 to-obsidiana/50" />
+        <div data-mecanismo-veu aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-obsidiana via-obsidiana/80 to-obsidiana/25" />
       </div>
 
       <div className="mx-auto flex min-h-svh max-w-[1200px] items-center px-5 py-secao-cel md:px-10 lg:py-secao">

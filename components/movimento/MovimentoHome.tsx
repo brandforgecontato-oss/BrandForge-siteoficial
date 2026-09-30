@@ -21,6 +21,7 @@ export function MovimentoHome() {
       if (mecanismo) {
         const fundo = mecanismo.querySelector("[data-mecanismo-fundo]");
         const texto = mecanismo.querySelectorAll("[data-mecanismo-texto] > *");
+        const veu = mecanismo.querySelector("[data-mecanismo-veu]");
         gsap
           .timeline({
             scrollTrigger: {
@@ -38,6 +39,8 @@ export function MovimentoHome() {
             { clipPath: "circle(75% at 50% 50%)", ease: "power2.inOut", duration: 1 },
           )
           .from(fundo, { scale: 1.15, ease: "none", duration: 1 }, 0)
+          // a torre aparece acesa; o véu escuro só entra junto com o texto
+          .from(veu, { autoAlpha: 0, ease: "power1.inOut", duration: 0.4 }, 0.55)
           .from(texto, { autoAlpha: 0, y: 40, stagger: 0.12, ease: "power2.out", duration: 0.5 }, 0.6);
       }
 
