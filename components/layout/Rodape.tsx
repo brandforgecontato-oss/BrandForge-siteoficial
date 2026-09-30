@@ -65,6 +65,14 @@ export function Rodape() {
         <span className="inline-flex min-h-11 items-center">© 2026 BrandForge</span>
         {contato.cnpj && <span className="inline-flex min-h-11 items-center">CNPJ: {contato.cnpj}</span>}
       </div>
+
+      {/* Fecho: o wordmark grande, gravado em ouro como a marca numa peça de metal */}
+      <div aria-hidden="true" className="mx-auto mt-12 max-w-[1200px] select-none overflow-hidden px-5 md:px-10">
+        <p className="font-display text-[clamp(3.5rem,15vw,13rem)] font-semibold leading-[0.9] tracking-tight text-transparent [-webkit-text-stroke:1px_rgb(212_175_106/0.35)]">
+          BrandForge
+        </p>
+        <span data-assinatura className="mt-4 block h-px w-full origin-left bg-ouro/60" />
+      </div>
     </footer>
   );
 }

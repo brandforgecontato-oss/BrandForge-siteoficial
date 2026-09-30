@@ -161,6 +161,13 @@ export function MovimentoHome() {
         );
       });
 
+      // Rodapé: a linha dourada sob o wordmark grande se desenha ao chegar
+      gsap.fromTo(
+        "[data-assinatura]",
+        { scaleX: 0 },
+        { scaleX: 1, duration: 1.6, ease: "power2.inOut", scrollTrigger: { trigger: "[data-assinatura]", start: "top 95%", once: true } },
+      );
+
       // Entradas: um gatilho por elemento, cada um na sua vez
       gsap.utils.toArray<HTMLElement>("[data-revelar]").forEach((el) => {
         gsap.from(el, {

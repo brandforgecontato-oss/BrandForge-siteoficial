@@ -114,6 +114,21 @@ html[data-entrada] body {
   opacity: 0.35;
 }
 
+/* Acordeão com <details>: abre e fecha deslizando (onde o navegador suporta; nos outros, abre direto) */
+:root {
+  interpolate-size: allow-keywords;
+}
+details::details-content {
+  height: 0;
+  overflow: clip;
+  transition:
+    height 0.5s var(--ease-ponteiro),
+    content-visibility 0.5s allow-discrete;
+}
+details[open]::details-content {
+  height: auto;
+}
+
 /* Acordeão com <details>: esconde o marcador padrão */
 details > summary {
   list-style: none;

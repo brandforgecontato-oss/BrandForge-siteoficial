@@ -55,6 +55,23 @@ export function Perguntas({ id = "perguntas", titulo = "Perguntas que a gente se
           </div>
         </div>
       </div>
+      <JsonLdPerguntas itens={itens} />
     </Secao>
   );
+}
+
+// Dados estruturados (schema.org FAQPage), com o mesmo texto visível na página.
+function JsonLdPerguntas({ itens }: { itens: Pergunta[] }) {
+  const dados = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: itens.map((i) => ({
+      "@type": "Question",
+      name: i.pergunta,
+      acceptedAnswer: { "@type": "Answer", text: i.resposta },
+    })),
+  };
+  // JSON.stringify não escapa "<": trocar impede fechar a tag <script> por engano.
+  const json = JSON.stringify(dados).replace(/</g, "<");
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />;
 }
