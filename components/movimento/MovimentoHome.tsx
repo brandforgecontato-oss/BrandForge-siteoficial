@@ -98,6 +98,18 @@ export function MovimentoHome() {
         };
       });
 
+      // A peça forjada do CTA final gira devagar com a rolagem
+      gsap.fromTo(
+        "[data-girar]",
+        { rotation: -12, scale: 0.92 },
+        {
+          rotation: 12,
+          scale: 1,
+          ease: "none",
+          scrollTrigger: { trigger: "[data-girar]", start: "top bottom", end: "bottom top", scrub: 1 },
+        },
+      );
+
       // Bisel do hero: gira devagar enquanto o hero sai da tela
       gsap.to("[data-bisel]", {
         rotation: 120,
