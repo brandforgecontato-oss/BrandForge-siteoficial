@@ -2,10 +2,13 @@
 
 import { useEffect, useRef } from "react";
 
-// A entrada: o vídeo toca em tela cheia e se fecha no círculo da abertura do hero.
+// A entrada: o vídeo toca inteiro em tela cheia, termina no próprio logo (monograma BF) e,
+// depois de um tempo parado nele, se fecha no círculo da abertura do hero.
 // Só aparece quando o script do layout marca <html data-entrada> (primeira visita da sessão,
 // sem movimento reduzido). Sem JavaScript, o CSS mantém esta camada escondida e o hero aparece direto.
 const CHAVE = "bf-entrada";
+const TEMPO_DO_LOGO = 2000; // quanto o último quadro (o logo) fica parado antes de fechar
+const LIMITE = 16000; // se o vídeo travar ou não carregar, o site abre mesmo assim
 
 export function Entrada() {
   const camada = useRef<HTMLDivElement>(null);
@@ -13,12 +16,16 @@ export function Entrada() {
 
   useEffect(() => {
     const raiz = document.documentElement;
-    if (!raiz.hasAttribute("data-entrada")) return;
+    const el = camada.current;
+    const v = video.current;
+    if (!raiz.hasAttribute("data-entrada") || !el || !v) return;
 
     let fechando = false;
+    let tempoLogo = 0;
+
     const encerrar = () => {
       raiz.removeAttribute("data-entrada");
-      video.current?.pause();
+      v.pause();
       try {
         sessionStorage.setItem(CHAVE, "1");
       } catch {}
@@ -27,13 +34,12 @@ export function Entrada() {
     const fechar = (duracao: number) => {
       if (fechando) return;
       fechando = true;
-      const el = camada.current;
       const alvo = document.querySelector<HTMLElement>("[data-abertura]");
-      if (!el || !alvo) return encerrar();
+      if (!alvo) return encerrar();
 
-      // O vídeo do hero continua do mesmo ponto: a troca não aparece.
+      // O vídeo do hero recomeça do início do loop: a troca não aparece.
       const videoHero = alvo.querySelector("video");
-      if (videoHero && video.current) videoHero.currentTime = video.current.currentTime;
+      if (videoHero) videoHero.currentTime = v.ended ? 0 : v.currentTime;
 
       const r = alvo.getBoundingClientRect();
       const cx = r.left + r.width / 2;
@@ -48,13 +54,26 @@ export function Entrada() {
       };
     };
 
-    const tempo = window.setTimeout(() => fechar(1400), 3200);
+    // Fim do vídeo: o último quadro (o logo) fica parado e, depois de um tempo, tudo se fecha no círculo.
+    const mostrarLogo = () => {
+      if (fechando || el.hasAttribute("data-fim")) return;
+      el.setAttribute("data-fim", "");
+      tempoLogo = window.setTimeout(() => fechar(1400), TEMPO_DO_LOGO);
+    };
+
+    v.addEventListener("ended", mostrarLogo);
+    v.addEventListener("error", mostrarLogo);
+    const limite = window.setTimeout(mostrarLogo, LIMITE);
+
     const pular = () => fechar(700);
     window.addEventListener("wheel", pular, { passive: true });
     window.addEventListener("touchmove", pular, { passive: true });
     window.addEventListener("keydown", pular);
     return () => {
-      window.clearTimeout(tempo);
+      window.clearTimeout(limite);
+      window.clearTimeout(tempoLogo);
+      v.removeEventListener("ended", mostrarLogo);
+      v.removeEventListener("error", mostrarLogo);
       window.removeEventListener("wheel", pular);
       window.removeEventListener("touchmove", pular);
       window.removeEventListener("keydown", pular);
@@ -74,13 +93,9 @@ export function Entrada() {
         preload="auto"
         aria-hidden="true"
       />
-      {/* Escurece o vídeo para o wordmark ler bem por cima */}
-      <div aria-hidden="true" className="absolute inset-0 bg-obsidiana/55" />
-      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle,transparent_30%,rgb(23_20_15/0.9)_100%)]" />
-      <p className="entrada-marca relative inline-flex flex-col font-display text-h2 font-semibold leading-none text-marfim lg:text-h1">
-        BrandForge
-        <span aria-hidden="true" className="mt-3 block h-px w-full bg-ouro" />
-      </p>
+      {/* Vinheta leve nas bordas; o centro (onde o logo aparece no fim) fica limpo */}
+      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,rgb(23_20_15/0.85)_100%)]" />
+
       <button
         type="button"
         onClick={(e) => {

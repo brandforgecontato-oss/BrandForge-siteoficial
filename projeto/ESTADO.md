@@ -60,6 +60,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-29 — Seção "A matéria bruta" aprovada com a imagem do horizonte (aprovado por Filipe)
 - 2026-09-29 — Movimento antecipado da etapa D a pedido de Filipe ("mais imersão ao mexer no site"): Lenis, a abertura pinada no mecanismo (vídeo nasce num círculo e abre em tela cheia), entradas das seções, bisel do hero girando, paralaxe na imagem, linha do tempo em ouro. Tudo desligado com movimento reduzido (pedido de Filipe)
 - 2026-09-29 — Imagem de "A matéria bruta" trocada do horizonte para a torre (`torre.webp`, recorte sem o texto gerado por IA) (pedido de Filipe)
+- 2026-09-30 — Escada de ofertas aprovada ("aprovado") (aprovado por Filipe)
+- 2026-09-30 — Entrada: o vídeo toca inteiro (10 s) e termina no próprio logo do vídeo (monograma BF + "Seu próximo sistema começa aqui."), parado 2 s, e só então se fecha no círculo do hero; sem wordmark sobreposto. Tempo-limite de 16 s se o vídeo não carregar (pedido de Filipe)
 
 ## Stack (fase 5)
 
@@ -95,6 +97,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | /sites, /atendimento-ia, /sob-medida, /privacidade, 404 | — | — | — |
 
 ## Pendências
+
+- [ ] O vídeo termina com um monograma "BF" dourado que não está no PDF de identidade (que usa só o wordmark). Confirmar se é o símbolo oficial; se for, pedir o arquivo em vetor (SVG) para favicon, ícone Apple e imagem de compartilhamento (etapa C) — **quem:** Filipe — desde 2026-09-30
 
 - [ ] O vídeo `abertura.mp4` tem texto sem sentido gerado por IA na interface que aparece a partir de ~2 s ("Seamlium", "Premium Sistema sistems", "UAIN NOW"); na entrada em tela cheia fica visível. Regenerar o vídeo sem texto, ou usar o outro vídeo (`BrandForge_website_hero_section…115240.mp4`) se for limpo — **quem:** Filipe/nós — desde 2026-09-29
 

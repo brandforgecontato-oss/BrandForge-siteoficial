@@ -108,19 +108,6 @@ html[data-entrada] .entrada {
 html[data-entrada] body {
   overflow: hidden;
 }
-.entrada-marca {
-  animation: entrada-marca 1.2s var(--ease-ponteiro) 0.3s both;
-}
-@keyframes entrada-marca {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 
 /* Como funciona: com o movimento ligado, só o passo em leitura fica aceso */
 [data-passos-vivo] > li:not([data-atual]) {
