@@ -5,7 +5,7 @@
 ## Agora
 
 - **Fase atual:** 6 — Construção (etapa A concluída; etapa B em andamento)
-- **Próximo passo:** ok de Filipe em Perguntas, Curso e Rodapé; construir /sites, /atendimento-ia, /sob-medida, /privacidade e 404 com a copy do COPY.md
+- **Próximo passo:** ok de Filipe em Perguntas, Curso, Rodapé e nas páginas internas; depois etapa C (Open Graph 1200×630, favicon e ícone Apple a partir do logo, JSON-LD Service por página) e fechar a fase com `npm run verificar`
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -98,7 +98,11 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Curso à parte (rede dourada à direita) | ok | 375/1440 ok, aguardando ok de Filipe | entrada |
 | CTA final (peça forjada; Cal.com oculto até ter link) | ok | aprovada | entrada + peça girando |
 | Rodapé + CTA fixo no celular (wordmark grande gravado) | ok | 375/1440 ok, aguardando ok de Filipe | linha dourada que se desenha |
-| /sites, /atendimento-ia, /sob-medida, /privacidade, 404 | — | — | — |
+| /sites (imagem do horizonte) | ok | 375/1440 ok, aguardando ok de Filipe | entradas |
+| /atendimento-ia (rede dourada; "Na prática" em painel) | ok | 375/1440 ok, aguardando ok de Filipe | entradas |
+| /sob-medida (torre de circuitos; "Como é feito" numerado) | ok | 375/1440 ok, aguardando ok de Filipe | entradas |
+| /privacidade (rascunho) | ok | 375/1440 ok | — |
+| 404 (bisel vazio) | ok | 375/1440 ok | — |
 
 ## Pendências
 
@@ -124,6 +128,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 
 ## Provisórios a trocar antes de publicar
 
+- /privacidade: "Última atualização: a definir na publicação" e "Quem somos" sem razão social/CNPJ
+
 - Endereço público da imobiliária no portfólio (pendente)
 
 ## Lançamento (fase 9)
@@ -131,6 +137,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
 
 ## Diário curto
+
+- 2026-09-30 — Fase 6, etapa B: home refinada seção a seção com Filipe (entrada com vídeo inteiro até o logo, cartas empilhadas, mostrador, ficha, capturas reais, peça forjada, wordmark gravado); movimento passou para o layout (vale em todas as páginas); /sites, /atendimento-ia, /sob-medida, /privacidade e 404 construídas com a copy exata.
 
 - 2026-09-29 — Fase 6, etapa A: mídia em `public/midia/` (vídeo, pôster extraído via Edge, rede e torre recortadas sem texto, horizonte), `lib/site.ts` com dados reais e links de WhatsApp, tokens da direção A, Playfair + Inter via next/font, grão, 10 seções da home + cabeçalho/rodapé/CTA fixo. Lint ok; 375 e 1440 sem scroll horizontal, 1 H1.
 

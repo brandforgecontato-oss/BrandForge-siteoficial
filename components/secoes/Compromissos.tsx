@@ -24,7 +24,7 @@ export function Compromissos() {
         <div className="relative mt-10 overflow-hidden rounded-peca border border-filete bg-obsidiana-alta px-6 py-4 md:px-10 md:py-6 lg:col-span-7 lg:col-start-6 lg:mt-0">
           {/* Filete de luz no topo, como nas peças da escada */}
           <span aria-hidden="true" className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ouro/60 to-transparent" />
-          {/* Cada linha ganha um traço dourado que se desenha ao aparecer (--traco, animado em MovimentoHome) */}
+          {/* Cada linha ganha um traço dourado que se desenha ao aparecer (--traco, animado em Movimento) */}
           <dl data-revelar-grupo>
             {compromissos.map((c) => (
               <div

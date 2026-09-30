@@ -65,7 +65,7 @@ export function ComoFunciona() {
   );
 }
 
-// Decorativo: o JS (MovimentoHome) mostra o mostrador, move o arco e troca o número do passo.
+// Decorativo: o JS (Movimento) mostra o mostrador, move o arco e troca o número do passo.
 function Mostrador() {
   const marcas = Array.from({ length: 48 }, (_, i) => i);
   return (

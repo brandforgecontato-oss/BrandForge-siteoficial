@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Cabecalho } from "@/components/layout/Cabecalho";
 import { CtaFixoCelular } from "@/components/layout/CtaFixoCelular";
 import { Rodape } from "@/components/layout/Rodape";
+import { Movimento } from "@/components/movimento/Movimento";
 import { Entrada } from "@/components/secoes/Entrada";
 import { JsonLdNegocio } from "@/components/seo/JsonLd";
 import { site, siteIndexavel, urlDoSite } from "@/lib/site";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Cabecalho />
           {children}
           <Rodape />
+          <Movimento />
         </ProvidersMovimento>
         <CtaFixoCelular />
         <div aria-hidden="true" className="grao" />

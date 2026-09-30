@@ -8,7 +8,6 @@ import { Mecanismo } from "@/components/secoes/Mecanismo";
 import { Ofertas } from "@/components/secoes/Ofertas";
 import { Perguntas } from "@/components/secoes/Perguntas";
 import { Portfolio } from "@/components/secoes/Portfolio";
-import { MovimentoHome } from "@/components/movimento/MovimentoHome";
 
 export default function Inicio() {
   return (
@@ -23,7 +22,6 @@ export default function Inicio() {
       <Perguntas />
       <Curso />
       <CtaFinal />
-      <MovimentoHome />
     </main>
   );
 }

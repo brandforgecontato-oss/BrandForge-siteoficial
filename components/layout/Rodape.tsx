@@ -3,9 +3,9 @@ import { contato, linkWhatsApp, site } from "@/lib/site";
 import { Wordmark } from "./Wordmark";
 
 const servicos = [
-  { href: "/#servicos", rotulo: "Presença" },
-  { href: "/#servicos", rotulo: "Atendimento IA" },
-  { href: "/#servicos", rotulo: "Sob medida" },
+  { href: "/sites", rotulo: "Presença" },
+  { href: "/atendimento-ia", rotulo: "Atendimento IA" },
+  { href: "/sob-medida", rotulo: "Sob medida" },
   { href: "/#curso", rotulo: "Curso de IA" },
 ];
 
