@@ -4,10 +4,10 @@
 
 ## Agora
 
-- **Fase atual:** 6 — Construção (etapa A concluída; etapa B em andamento)
-- **Próximo passo:** ok de Filipe em Perguntas, Curso, Rodapé e nas páginas internas; com isso, fechar a fase 6 (tabela toda conferida) e abrir a fase 7 (revisão)
+- **Fase atual:** 7 — Revisão (não iniciada)
+- **Próximo passo:** abrir a fase 7: checagens automáticas (imagens, scroll horizontal, H1, alt, console, alvos de toque, teclado, movimento reduzido, sem JS) em 375/768/1920 e Lighthouse com o build de produção (pedir autorização antes do `npx lighthouse`), resultado em `projeto/REVISAO.md`
 - **Modelo recomendado:** Sonnet
-- **Última atualização:** 2026-09-29 por BrandForge
+- **Última atualização:** 2026-09-30 por BrandForge
 
 ## Fases
 
@@ -19,7 +19,7 @@
 | 3 | Direção criativa | concluída | `projeto/DIRECAO.md` |
 | 4 | Copy | concluída | `projeto/COPY.md` |
 | 5 | Stack | concluída | seção "Stack" abaixo |
-| 6 | Construção | em andamento | código em `app/`, `components/`, `lib/` |
+| 6 | Construção | concluída | código em `app/`, `components/`, `lib/` |
 | 7 | Revisão | não iniciada | `projeto/REVISAO.md` |
 | 8 | Preview e feedback | não iniciada | `projeto/FEEDBACK.md` |
 | 9 | Lançamento | não iniciada | seção "Lançamento" abaixo |
@@ -67,6 +67,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-30 — "Como funciona" (mostrador) e CTA final (peça forjada) aprovados ("ótimo", "perfeito") (aprovado por Filipe)
 - 2026-09-30 — Compromissos (ficha) e Portfólio (capturas reais) aprovados ("ótimo, pode prosseguir") (aprovado por Filipe)
 - 2026-09-30 — O monograma "BF" dourado (fim do vídeo da entrada) é o símbolo oficial da BrandForge (confirmado por Filipe)
+- 2026-09-30 — Perguntas, Curso, Rodapé, /sites, /atendimento-ia, /sob-medida, /privacidade e 404 aprovados ("ótimo, vamos prosseguir"); fase 6 concluída (aprovado por Filipe)
 
 ## Stack (fase 5)
 
@@ -97,13 +98,13 @@ Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo c
 | Como funciona (mostrador no desktop) | ok | aprovada | linha em ouro, passo aceso, mostrador com arco |
 | Compromissos (ficha em painel) | ok | aprovada | traços dourados que se desenham |
 | Portfólio (capturas reais em moldura; sem imobiliária) | ok | aprovada | entrada + zoom leve no hover |
-| Perguntas (FAQPage JSON-LD) | ok | 375/1440 ok, aguardando ok de Filipe | acordeão que desliza |
-| Curso à parte (rede dourada à direita) | ok | 375/1440 ok, aguardando ok de Filipe | entrada |
+| Perguntas (FAQPage JSON-LD) | ok | 375/1440 ok, aprovada | acordeão que desliza |
+| Curso à parte (rede dourada à direita) | ok | 375/1440 ok, aprovada | entrada |
 | CTA final (peça forjada; Cal.com oculto até ter link) | ok | aprovada | entrada + peça girando |
-| Rodapé + CTA fixo no celular (wordmark grande gravado) | ok | 375/1440 ok, aguardando ok de Filipe | linha dourada que se desenha |
-| /sites (imagem do horizonte) | ok | 375/1440 ok, aguardando ok de Filipe | entradas |
-| /atendimento-ia (rede dourada; "Na prática" em painel) | ok | 375/1440 ok, aguardando ok de Filipe | entradas |
-| /sob-medida (torre de circuitos; "Como é feito" numerado) | ok | 375/1440 ok, aguardando ok de Filipe | entradas |
+| Rodapé + CTA fixo no celular (wordmark grande gravado) | ok | 375/1440 ok, aprovada | linha dourada que se desenha |
+| /sites (imagem do horizonte) | ok | 375/1440 ok, aprovada | entradas |
+| /atendimento-ia (rede dourada; "Na prática" em painel) | ok | 375/1440 ok, aprovada | entradas |
+| /sob-medida (torre de circuitos; "Como é feito" numerado) | ok | 375/1440 ok, aprovada | entradas |
 | /privacidade (rascunho) | ok | 375/1440 ok | — |
 | 404 (bisel vazio) | ok | 375/1440 ok | — |
 
@@ -142,6 +143,8 @@ Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo c
 - Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
 
 ## Diário curto
+
+- 2026-09-30 — Fase 6 concluída: todas as seções e páginas aprovadas; etapa C (Open Graph, ícones BF, JSON-LD) feita; `npm run verificar` passou.
 
 - 2026-09-30 — Fase 6, etapa B: home refinada seção a seção com Filipe (entrada com vídeo inteiro até o logo, cartas empilhadas, mostrador, ficha, capturas reais, peça forjada, wordmark gravado); movimento passou para o layout (vale em todas as páginas); /sites, /atendimento-ia, /sob-medida, /privacidade e 404 construídas com a copy exata.
 
