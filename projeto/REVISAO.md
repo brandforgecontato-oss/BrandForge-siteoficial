@@ -63,3 +63,8 @@ Busca dirigida nas regras da skill sobre `app/` e `components/`.
 - **decisão registrada** — rastreadores de IA ficam liberados em `app/robots.ts` (padrão do template; negócio quer aparecer em respostas de IA). Filipe pode reverter.
 - **pendente humano (Filipe)** — celular real; ícone BF em SVG; imobiliária no portfólio; link do Cal.com; conferir horário de Brasília; advogado sobre o link/selos do Rapé Xingu; aviso "projeto conceitual" nas demos; CNPJ e data da política de privacidade; regenerar o texto sem sentido no `abertura.mp4`; cantos pretos do vídeo do hero em 1920.
 - **fase 9** — domínio/HTTPS, Search Console, prévia no WhatsApp, acessos entregues.
+
+## 9. Preview no ar (fase 8, 2026-09-30)
+- URL: https://brand-forge-siteoficial.vercel.app. **ok** — 200 nas 5 rotas, robots `Disallow: /`, `X-Robots-Tag: noindex, nofollow`, sitemap e Open Graph no ar.
+- Lighthouse na URL do ar (PageSpeed público sem cota): desktop 99 · 100 · 100 · 69; mobile **70** · 100 · 100 · 69 (LCP 3,4 s, TBT 680 ms, CLS 0). SEO 69 é o noindex de propósito.
+- Mobile segue abaixo de 85: a nota oscila entre 70 e 76 entre medições; a entrada em vídeo e o JS de movimento pesam. Decisão de Filipe (seção 6).

@@ -4,8 +4,8 @@
 
 ## Agora
 
-- **Fase atual:** 8 — Preview e feedback (não iniciada)
-- **Próximo passo:** abrir a fase 8: publicar um preview na Vercel (pedir ok antes) e colher o feedback de Filipe; medir o mobile no PageSpeed Insights com a URL do preview
+- **Fase atual:** 8 — Preview e feedback (preview no ar; aguardando feedback)
+- **Próximo passo:** Filipe envia a mensagem com a URL do preview e traz o feedback; consolidar em `projeto/FEEDBACK.md` (rodada 1) e aplicar em lote
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-30 por BrandForge
 
@@ -21,7 +21,7 @@
 | 5 | Stack | concluída | seção "Stack" abaixo |
 | 6 | Construção | concluída | código em `app/`, `components/`, `lib/` |
 | 7 | Revisão | concluída | `projeto/REVISAO.md` |
-| 8 | Preview e feedback | não iniciada | `projeto/FEEDBACK.md` |
+| 8 | Preview e feedback | em andamento | `projeto/FEEDBACK.md` |
 | 9 | Lançamento | não iniciada | seção "Lançamento" abaixo |
 | 10 | Portfólio | não iniciada | commit no portfólio do template |
 
@@ -143,9 +143,11 @@ Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo c
 
 ## Lançamento (fase 9)
 
-- Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: — · Produção: —
+- Domínio: a registrar (ex.: brandforge.com.br, brandforge.tech; verificar na fase 9) · Preview: https://brand-forge-siteoficial.vercel.app (Vercel, projeto brand-forge-siteoficial; noindex ativo, atualiza a cada push na main) · Produção: —
 
 ## Diário curto
+
+- 2026-09-30 — Fase 8: preview publicado na Vercel por Filipe (https://brand-forge-siteoficial.vercel.app). Conferido no ar: 5 páginas, robots, sitemap, OG e mídia respondem 200; `X-Robots-Tag: noindex, nofollow`; CTA acima da dobra em 375/768/1920. Lighthouse no ar: desktop 99/100/100/69, mobile 70/100/100/69 (LCP 3,4 s, TBT 680 ms).
 
 - 2026-09-30 — Fase 7 concluída: build, checagens no navegador (375/768/1920), teclado, sem JS, movimento reduzido, segurança e Lighthouse (desktop 99, mobile 76). Corrigidos: vídeos em loop com movimento reduzido, vídeo do mecanismo baixado na carga, aviso do next/image, theme-color, touch-action, aria-hidden. Detalhes em `projeto/REVISAO.md`.
 
