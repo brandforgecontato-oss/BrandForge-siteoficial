@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BlocoLista, BlocoTexto, ProximoDegrau } from "@/components/paginas/Blocos";
+import { JsonLdServico } from "@/components/seo/JsonLdServico";
+import { openGraphBase } from "@/lib/metadados";
 import { HeroServico } from "@/components/paginas/HeroServico";
 import { CtaFinal } from "@/components/secoes/CtaFinal";
 import { Perguntas } from "@/components/secoes/Perguntas";
@@ -11,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Site, loja virtual e marca para pequenos negócios no Brasil e em Portugal. Rápido no celular, pronto para o Google e com o WhatsApp a um toque.",
   alternates: { canonical: "/sites" },
+  openGraph: { ...openGraphBase, title: "Site para pequeno negócio, feito sob medida | BrandForge", description: "Site, loja virtual e marca para pequenos negócios no Brasil e em Portugal. Rápido no celular, pronto para o Google e com o WhatsApp a um toque.", url: "/sites" },
 };
 
 export default function Sites() {
@@ -70,6 +73,7 @@ export default function Sites() {
         rotulo="Conheça o Atendimento IA"
       />
       <CtaFinal />
+      <JsonLdServico nome="Site, loja virtual e marca" descricao="Site, loja virtual e marca para pequenos negócios no Brasil e em Portugal. Rápido no celular, pronto para o Google e com o WhatsApp a um toque." rota="/sites" />
     </main>
   );
 }

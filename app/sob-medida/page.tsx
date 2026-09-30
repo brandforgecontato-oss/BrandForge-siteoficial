@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { BlocoLista, BlocoTexto } from "@/components/paginas/Blocos";
+import { JsonLdServico } from "@/components/seo/JsonLdServico";
+import { openGraphBase } from "@/lib/metadados";
 import { HeroServico } from "@/components/paginas/HeroServico";
 import { CtaFinal } from "@/components/secoes/CtaFinal";
 import { Perguntas } from "@/components/secoes/Perguntas";
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Sistemas, automações e integrações com IA, desenhados a partir de um diagnóstico da sua operação. Para negócios no Brasil e em Portugal.",
   alternates: { canonical: "/sob-medida" },
+  openGraph: { ...openGraphBase, title: "Automação com IA sob medida para empresas | BrandForge", description: "Sistemas, automações e integrações com IA, desenhados a partir de um diagnóstico da sua operação. Para negócios no Brasil e em Portugal.", url: "/sob-medida" },
 };
 
 export default function SobMedida() {
@@ -68,6 +71,7 @@ export default function SobMedida() {
         <p>É para isso que existe o diagnóstico.</p>
       </BlocoTexto>
       <CtaFinal />
+      <JsonLdServico nome="Automação com IA sob medida" descricao="Sistemas, automações e integrações com IA, desenhados a partir de um diagnóstico da sua operação. Para negócios no Brasil e em Portugal." rota="/sob-medida" />
     </main>
   );
 }

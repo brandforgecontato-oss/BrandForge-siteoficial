@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { BlocoLista, BlocoTexto, ProximoDegrau } from "@/components/paginas/Blocos";
+import { JsonLdServico } from "@/components/seo/JsonLdServico";
+import { openGraphBase } from "@/lib/metadados";
 import { HeroServico } from "@/components/paginas/HeroServico";
 import { CtaFinal } from "@/components/secoes/CtaFinal";
 import { Perguntas } from "@/components/secoes/Perguntas";
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Atendente de IA no WhatsApp do seu negócio: responde a qualquer hora, passa a conversa para você quando precisa e registra cada cliente num CRM.",
   alternates: { canonical: "/atendimento-ia" },
+  openGraph: { ...openGraphBase, title: "Atendente de IA no WhatsApp para o seu negócio | BrandForge", description: "Atendente de IA no WhatsApp do seu negócio: responde a qualquer hora, passa a conversa para você quando precisa e registra cada cliente num CRM.", url: "/atendimento-ia" },
 };
 
 export default function AtendimentoIA() {
@@ -68,6 +71,7 @@ export default function AtendimentoIA() {
         rotulo="Conheça o Sob medida"
       />
       <CtaFinal />
+      <JsonLdServico nome="Atendente de IA no WhatsApp" descricao="Atendente de IA no WhatsApp do seu negócio: responde a qualquer hora, passa a conversa para você quando precisa e registra cada cliente num CRM." rota="/atendimento-ia" />
     </main>
   );
 }

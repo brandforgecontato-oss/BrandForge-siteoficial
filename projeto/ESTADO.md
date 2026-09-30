@@ -5,7 +5,7 @@
 ## Agora
 
 - **Fase atual:** 6 — Construção (etapa A concluída; etapa B em andamento)
-- **Próximo passo:** ok de Filipe em Perguntas, Curso, Rodapé e nas páginas internas; depois etapa C (Open Graph 1200×630, favicon e ícone Apple a partir do logo, JSON-LD Service por página) e fechar a fase com `npm run verificar`
+- **Próximo passo:** ok de Filipe em Perguntas, Curso, Rodapé e nas páginas internas; com isso, fechar a fase 6 (tabela toda conferida) e abrir a fase 7 (revisão)
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -66,6 +66,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - 2026-09-30 — Imagem `brandforge-Forja.png` entra no CTA final como a "peça forjada" (recorte `public/midia/forja.webp`, sem o texto gravado "The Forge / Forjamos a tecnologia que move o futuro."), fundida ao fundo e girando devagar com a rolagem (pedido de Filipe; posição escolhida por nós)
 - 2026-09-30 — "Como funciona" (mostrador) e CTA final (peça forjada) aprovados ("ótimo", "perfeito") (aprovado por Filipe)
 - 2026-09-30 — Compromissos (ficha) e Portfólio (capturas reais) aprovados ("ótimo, pode prosseguir") (aprovado por Filipe)
+- 2026-09-30 — O monograma "BF" dourado (fim do vídeo da entrada) é o símbolo oficial da BrandForge (confirmado por Filipe)
 
 ## Stack (fase 5)
 
@@ -82,6 +83,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - Segurança: sem formulário, login, pagamento nem segredo; cabeçalhos no `next.config` (CSP, HSTS, X-Content-Type-Options, Referrer-Policy, frame-ancestors)
 
 ## Construção (fase 6)
+
+Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo com marcas, conforme COPY) com alt; ícones do monograma BF; JSON-LD FAQPage (home e serviços), Service (/sites, /atendimento-ia, /sob-medida) e ProfessionalService (todas); Open Graph por página via `lib/metadados.ts`; sitemap com 5 rotas. `npm run verificar` passou; H1 e CTA no HTML sem JS.
 
 | Seção | Estrutura | Conferida 375/1440 | Animação |
 |---|---|---|---|
@@ -106,7 +109,7 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 
 ## Pendências
 
-- [ ] O vídeo termina com um monograma "BF" dourado que não está no PDF de identidade (que usa só o wordmark). Confirmar se é o símbolo oficial; se for, pedir o arquivo em vetor (SVG) para favicon, ícone Apple e imagem de compartilhamento (etapa C) — **quem:** Filipe — desde 2026-09-30
+- [ ] Enviar o monograma "BF" em vetor (SVG): hoje o ícone (`app/icon.png`, `app/apple-icon.png`) foi extraído do último quadro do vídeo (provisório, nítido em tamanho de ícone) — **quem:** Filipe — desde 2026-09-30
 
 - [ ] O vídeo `abertura.mp4` tem texto sem sentido gerado por IA na interface que aparece a partir de ~2 s ("Seamlium", "Premium Sistema sistems", "UAIN NOW"); na entrada em tela cheia fica visível. Regenerar o vídeo sem texto, ou usar o outro vídeo (`BrandForge_website_hero_section…115240.mp4`) se for limpo — **quem:** Filipe/nós — desde 2026-09-29
 
@@ -127,6 +130,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 - [x] Dado da KPMG conferido em 2026-09-29 na página oficial https://kpmg.com/co/es/tendencias/2026/05/global-tech-report-2026.html (KPMG Global Tech Report 2026, recorte América do Sul): "la investigación contó con la participación de 150 líderes, todos de Brasil" e "El 45% informó de proyectos de IA que estaban desconectados entre sí". Na copy: "45% dos 150 líderes brasileiros ouvidos pela KPMG relatam projetos de IA desconectados entre si (Global Tech Report 2026)", com link. Atenção: amostra de líderes de empresas, não de pequenos negócios; não generalizar para "pequenos negócios"
 
 ## Provisórios a trocar antes de publicar
+
+- Ícones `app/icon.png` e `app/apple-icon.png` extraídos do vídeo; trocar pelo SVG oficial do monograma BF
 
 - /privacidade: "Última atualização: a definir na publicação" e "Quem somos" sem razão social/CNPJ
 
