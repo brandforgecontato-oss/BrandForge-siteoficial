@@ -74,11 +74,18 @@ export function Ofertas() {
         </div>
       </div>
 
-      <ol data-revelar-grupo className="mt-14 space-y-6">
-        {pecas.map((p) => (
-          <li key={p.numero} className="rounded-peca border border-filete bg-obsidiana-alta p-6 md:p-10 lg:grid lg:grid-cols-12 lg:gap-8">
+      {/* No computador as peças se empilham: cada uma fica presa e a seguinte sobe por cima (data-empilhar) */}
+      <ol data-revelar-grupo data-empilhar className="mt-14 space-y-6 lg:space-y-28">
+        {pecas.map((p, i) => (
+          <li
+            key={p.numero}
+            style={{ top: `${104 + i * 28}px` }}
+            className="relative overflow-hidden rounded-peca border border-filete bg-obsidiana-alta p-6 md:p-10 lg:sticky lg:grid lg:min-h-[26rem] lg:grid-cols-12 lg:items-center lg:gap-8 lg:p-14"
+          >
+            {/* Filete de luz no topo, como o reflexo num metal escuro */}
+            <span aria-hidden="true" className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ouro/60 to-transparent" />
             <div className="lg:col-span-5">
-              <p className="font-display text-h2 leading-none text-ouro" aria-hidden="true">
+              <p className="font-display text-[4.5rem] leading-none text-ouro lg:text-[7rem]" aria-hidden="true">
                 {p.numero}
               </p>
               <h3 className="mt-4 text-h3">

@@ -5,7 +5,7 @@
 ## Agora
 
 - **Fase atual:** 6 — Construção (etapa A concluída; etapa B em andamento)
-- **Próximo passo:** etapa B: mostrar o esqueleto a Filipe e refinar seção a seção na ordem da página, começando pelo hero (conferir 375/1440 e pedir ok de cada uma)
+- **Próximo passo:** etapa B: ok de Filipe na escada de ofertas; depois Como funciona, Compromissos, Portfólio (capturas reais), Perguntas, Curso, CTA final, rodapé; em seguida as páginas /sites, /atendimento-ia, /sob-medida, /privacidade e 404
 - **Modelo recomendado:** Sonnet
 - **Última atualização:** 2026-09-29 por BrandForge
 
@@ -83,8 +83,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Entrada em vídeo (tela cheia → círculo) | ok | aprovada | ok (Web Animations, sem GSAP) |
 | Hero (abertura estática, anel de marcas, vídeo aquecido) | ok | aprovada | — |
 | A matéria bruta (imagem da torre) | ok | aprovada | entrada + paralaxe |
-| O mecanismo por dentro | ok | — | a abertura (pin + scrub) |
-| Escada de ofertas | ok | — | — |
+| O mecanismo por dentro | ok | aprovada (movimento aprovado: "ótimo") | a abertura (pin + scrub) |
+| Escada de ofertas (cartas que se empilham no desktop) | ok | 375/1440 ok, aguardando ok de Filipe | sticky + recuo da peça de trás |
 | Como funciona | ok | — | — |
 | Compromissos | ok | — | — |
 | Portfólio | ok (sem imobiliária, sem capturas) | — | — |

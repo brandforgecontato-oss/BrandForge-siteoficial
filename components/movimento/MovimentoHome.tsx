@@ -41,6 +41,27 @@ export function MovimentoHome() {
           .from(texto, { autoAlpha: 0, y: 40, stagger: 0.12, ease: "power2.out", duration: 0.5 }, 0.6);
       }
 
+      // Escada de ofertas (só no computador): a peça de trás recua e escurece quando a seguinte chega
+      mm.add("(min-width: 1024px)", () => {
+        gsap.utils.toArray<HTMLElement>("[data-empilhar] > li").forEach((peca, i, pecas) => {
+          const seguinte = pecas[i + 1];
+          if (!seguinte) return;
+          gsap.to(peca, {
+            scale: 0.95,
+            filter: "brightness(0.7)",
+            ease: "none",
+            scrollTrigger: {
+              trigger: seguinte,
+              // começa quando a seguinte encosta na base desta, termina quando ela se prende por cima
+              start: () => `top ${parseFloat(peca.style.top) + peca.offsetHeight}px`,
+              end: () => `top ${parseFloat(seguinte.style.top) + 8}px`,
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
+          });
+        });
+      });
+
       // Bisel do hero: gira devagar enquanto o hero sai da tela
       gsap.to("[data-bisel]", {
         rotation: 120,
