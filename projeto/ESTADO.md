@@ -84,8 +84,8 @@ Uma linha por decisão, com data e quem aprovou. Nunca apague: se mudar, risque 
 | Hero (abertura estática, anel de marcas, vídeo aquecido) | ok | aprovada | — |
 | A matéria bruta (imagem da torre) | ok | aprovada | entrada + paralaxe |
 | O mecanismo por dentro | ok | aprovada (movimento aprovado: "ótimo") | a abertura (pin + scrub) |
-| Escada de ofertas (cartas que se empilham no desktop) | ok | 375/1440 ok, aguardando ok de Filipe | sticky + recuo da peça de trás |
-| Como funciona | ok | — | — |
+| Escada de ofertas (cartas que se empilham no desktop) | ok | aprovada | sticky + recuo da peça de trás |
+| Como funciona (mostrador no desktop) | ok | 1440 ok, aguardando ok de Filipe | linha em ouro, passo aceso, mostrador com arco |
 | Compromissos | ok | — | — |
 | Portfólio | ok (sem imobiliária, sem capturas) | — | — |
 | Perguntas | ok | — | — |

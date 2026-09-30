@@ -122,6 +122,11 @@ html[data-entrada] body {
   }
 }
 
+/* Como funciona: com o movimento ligado, só o passo em leitura fica aceso */
+[data-passos-vivo] > li:not([data-atual]) {
+  opacity: 0.35;
+}
+
 /* Acordeão com <details>: esconde o marcador padrão */
 details > summary {
   list-style: none;

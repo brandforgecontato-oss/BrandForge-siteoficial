@@ -62,6 +62,39 @@ export function MovimentoHome() {
         });
       });
 
+      // Como funciona (só no computador): o passo em leitura acende e o mostrador acompanha
+      mm.add("(min-width: 1024px)", () => {
+        const lista = document.querySelector<HTMLElement>("[data-passos]");
+        const mostrador = document.querySelector<HTMLElement>("[data-mostrador]");
+        if (!lista || !mostrador) return;
+        const itens = Array.from(lista.children) as HTMLElement[];
+        const numero = mostrador.querySelector("[data-mostrador-numero]");
+        const marcar = (atual: number) => {
+          itens.forEach((li, i) => li.toggleAttribute("data-atual", i === atual));
+          if (numero) numero.textContent = String(atual + 1);
+        };
+        lista.setAttribute("data-passos-vivo", "");
+        gsap.set(mostrador, { autoAlpha: 1 });
+        marcar(0);
+        itens.forEach((li, i) => {
+          ScrollTrigger.create({
+            trigger: li,
+            start: "top 55%",
+            end: "bottom 55%",
+            onToggle: (self) => self.isActive && marcar(i),
+          });
+        });
+        gsap.fromTo(
+          "[data-mostrador-arco]",
+          { strokeDashoffset: 100 },
+          { strokeDashoffset: 0, ease: "none", scrollTrigger: { trigger: lista, start: "top 55%", end: "bottom 55%", scrub: true } },
+        );
+        return () => {
+          lista.removeAttribute("data-passos-vivo");
+          itens.forEach((li) => li.removeAttribute("data-atual"));
+        };
+      });
+
       // Bisel do hero: gira devagar enquanto o hero sai da tela
       gsap.to("[data-bisel]", {
         rotation: 120,
@@ -115,6 +148,8 @@ export function MovimentoHome() {
           duration: 0.9,
           stagger: 0.12,
           ease: "power3.out",
+          // nos passos, a opacidade volta para o CSS (passo aceso/apagado)
+          ...(grupo.hasAttribute("data-passos") ? { clearProps: "opacity,visibility" } : {}),
           scrollTrigger: { trigger: grupo, start: "top 85%", once: true },
         });
       });
