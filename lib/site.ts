@@ -33,7 +33,7 @@ export const site: Site = {
   nome: "BrandForge",
   descricao:
     "Sites, atendimento com IA no WhatsApp e automações sob medida para pequenos negócios no Brasil e em Portugal. Comece por um diagnóstico grátis.",
-  paginas: ["/", "/sites", "/atendimento-ia", "/sob-medida", "/privacidade"],
+  paginas: ["/", "/sites", "/atendimento-ia", "/sob-medida", "/portfolio", "/privacidade"],
   negocio: {
     tipoSchema: "ProfessionalService",
     telefone: "+55-61-99901-5955",

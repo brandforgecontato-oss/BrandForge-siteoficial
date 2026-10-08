@@ -6,7 +6,7 @@ import { Wordmark } from "./Wordmark";
 const itens = [
   { href: "/#servicos", rotulo: "Serviços" },
   { href: "/#como-funciona", rotulo: "Como funciona" },
-  { href: "/#portfolio", rotulo: "Portfólio" },
+  { href: "/portfolio", rotulo: "Portfólio" },
   { href: "/#perguntas", rotulo: "Perguntas" },
 ];
 

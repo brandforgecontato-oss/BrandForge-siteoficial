@@ -1,30 +1,7 @@
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
+import Link from "next/link";
 import { Secao } from "@/components/ui/Secao";
-import capturaMemphis from "@/public/midia/projeto-memphis.webp";
-import capturaRape from "@/public/midia/projeto-rape-xingu.webp";
-
-type Projeto = { nome: string; linha: string; url: string; captura: StaticImageData; alt: string; destaque?: boolean };
-
-// A imobiliária entra quando Filipe enviar endereço e descrição (pendência no ESTADO).
-const projetos: Projeto[] = [
-  {
-    nome: "Memphis Burger",
-    linha:
-      "Hamburgueria em Brasília. Cardápio fácil de ler no celular e pedido direto pelo WhatsApp, com endereço e horário a um toque.",
-    url: "https://chicagoburgersite.vercel.app/",
-    captura: capturaMemphis,
-    alt: "Página inicial do site conceitual da hamburgueria Memphis Burger, com foto de hambúrguer em fundo escuro",
-    destaque: true,
-  },
-  {
-    nome: "Rapé Xingu",
-    linha:
-      "Loja virtual de produto artesanal. Catálogo com duas linhas, carrinho e pedido finalizado pelo WhatsApp, com confirmação de maioridade na entrada.",
-    url: "https://site-rapechingu.vercel.app",
-    captura: capturaRape,
-    alt: "Página inicial do site conceitual da loja Rapé Xingu",
-  },
-];
+import { projetos } from "@/lib/portfolio";
 
 export function Portfolio() {
   return (
@@ -61,18 +38,25 @@ export function Portfolio() {
               <span className="self-start rounded-peca border border-filete px-2.5 py-1 text-apoio text-areia">Projeto conceitual</span>
               <h3 className="mt-5 text-h3">{p.nome}</h3>
               <p className="mt-3 text-areia">{p.linha}</p>
-              <a
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={`/portfolio/${p.slug}`}
                 className="mt-auto inline-flex pt-6 min-h-11 items-center self-start text-ouro underline decoration-ouro/40 underline-offset-4 hover:decoration-ouro"
               >
-                Ver o projeto<span className="sr-only"> {p.nome} (abre em nova aba)</span>
-              </a>
+                Ver o projeto<span className="sr-only"> {p.nome}</span>
+              </Link>
             </div>
           </li>
         ))}
       </ul>
+
+      <div data-revelar className="mt-12">
+        <Link
+          href="/portfolio"
+          className="inline-flex min-h-12 items-center gap-2 text-ouro underline decoration-ouro/40 underline-offset-4 hover:decoration-ouro"
+        >
+          Ver o portfólio completo<span aria-hidden="true">→</span>
+        </Link>
+      </div>
     </Secao>
   );
 }

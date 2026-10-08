@@ -7,6 +7,7 @@ const servicos = [
   { href: "/atendimento-ia", rotulo: "Atendimento IA" },
   { href: "/sob-medida", rotulo: "Sob medida" },
   { href: "/#curso", rotulo: "Curso de IA" },
+  { href: "/portfolio", rotulo: "Portfólio" },
 ];
 
 export function Rodape() {
