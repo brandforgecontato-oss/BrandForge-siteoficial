@@ -168,3 +168,4 @@ Etapa C (2026-09-30): `app/opengraph-image.png` 1200×630 (wordmark + círculo c
 
 - 2026-10-08 — Portfólio profissional adicionado ao site atual (escolha de Filipe): `/portfolio` + `/portfolio/[slug]` (Memphis Burger, Rapé Xingu), dados em `lib/portfolio.ts`, menu, rodapé, sitemap e seção da home ligados. `npm run verificar` passou; 375/1440 sem scroll horizontal. Imobiliária entra com uma entrada em `lib/portfolio.ts` quando houver endereço. Sem commit/push ainda.
 - 2026-10-08 — Paola Marra Advocacia (https://site-paola-kappa.vercel.app/) entra no portfólio por pedido direto de Filipe, revertendo a decisão de 2026-09-29 que a deixava de fora. O próprio site se declara projeto conceitual. Push na main autorizado por Filipe.
+- 2026-10-08 — Casa Alta Imobiliária (https://imobiliaria-lyart.vercel.app/) entra no portfólio por pedido de Filipe, sem preços; resolve a pendência da imobiliária. Push autorizado.

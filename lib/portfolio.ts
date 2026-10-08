@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import capturaImobiliaria from "@/public/midia/projeto-imobiliaria.webp";
 import capturaMemphis from "@/public/midia/projeto-memphis.webp";
 import capturaPaola from "@/public/midia/projeto-paola.webp";
 import capturaRape from "@/public/midia/projeto-rape-xingu.webp";
@@ -70,6 +71,22 @@ export const projetos: Projeto[] = [
       "Duas áreas de atuação, família e trabalho, com página para cada uma.",
       "Agendamento de consulta, presencial ou online, em destaque.",
       "Perguntas frequentes em acordeão.",
+    ],
+    servico: { rotulo: "Presença: site, loja e marca", href: "/sites" },
+  },
+  {
+    slug: "casa-alta-imobiliaria",
+    nome: "Casa Alta Imobiliária",
+    categoria: "Imobiliária de alto padrão em Brasília",
+    linha:
+      "Site de imobiliária de alto padrão em Brasília. Imóveis em destaque, busca por tipo, região e código, e contato direto com o corretor.",
+    url: "https://imobiliaria-lyart.vercel.app/",
+    captura: capturaImobiliaria,
+    alt: "Página inicial do site conceitual da Casa Alta Imobiliária, com sala de apartamento de alto padrão ao fundo e a busca de imóveis",
+    demonstra: [
+      "Busca de imóveis por tipo, região e código.",
+      "Imóveis em destaque, com página de detalhes.",
+      "Contato com o corretor a um toque, pelo WhatsApp.",
     ],
     servico: { rotulo: "Presença: site, loja e marca", href: "/sites" },
   },
